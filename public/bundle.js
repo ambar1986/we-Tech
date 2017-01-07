@@ -60,6 +60,10 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
+	var _elegible = __webpack_require__(235);
+	
+	var _elegible2 = _interopRequireDefault(_elegible);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -89,13 +93,13 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: '#' },
-								'About'
+								{ to: 'Elegible' },
+								'Eligibility'
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: '#' },
-								'FAQ'
+								{ to: 'About' },
+								'About'
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
@@ -116,7 +120,9 @@
 		_react2.default.createElement(
 			_reactRouter.Route,
 			{ path: '/', component: App },
-			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default })
+			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: About })
 		)
 	), document.getElementById('root'));
 
@@ -26491,6 +26497,59 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Elegible = _react2.default.createClass({
+		displayName: 'Elegible',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Who is Elegible?'
+				),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'As a mentor:'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc... '
+				),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'As a mentee:'
+				),
+				_react2.default.createElement(
+					'p',
+					null,
+					'You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc... '
+				)
+			);
+		}
+	});
+	
+	exports.default = Elegible;
 
 /***/ }
 /******/ ]);
