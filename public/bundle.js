@@ -60,9 +60,13 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _elegible = __webpack_require__(235);
+	var _elegible = __webpack_require__(234);
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
+	
+	var _about = __webpack_require__(236);
+	
+	var _about2 = _interopRequireDefault(_about);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -75,7 +79,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'logo-class' },
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(234) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(235) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -122,7 +126,7 @@
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: About })
+			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26496,12 +26500,6 @@
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
-
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -26550,6 +26548,87 @@
 	});
 	
 	exports.default = Elegible;
+
+/***/ },
+/* 235 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	
+	  getInitialState: function getInitialState() {
+	    return { about: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ about: _data2.default.getAbout() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'About'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.about.text
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = About;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var data = {
+		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
+		elegible: {}
+	
+	};
+	
+	data.getAbout = function () {
+		return this.about;
+	};
+	
+	exports.default = data;
 
 /***/ }
 /******/ ]);
