@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 import Home from './home';
 import Mentor from './mentor';
+import Mentee from './mentee.jsx';
 import About from './about.jsx';
 import Login from './login.jsx';
-import ContactUs from './contact-us.jsx'
+import ContactUs from './contact-us.jsx';
 import '../app.css';
 
 var App = React.createClass({
