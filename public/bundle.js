@@ -61,6 +61,8 @@
 	var _home2 = _interopRequireDefault(_home);
 	
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 	var _elegible = __webpack_require__(240);
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
@@ -75,6 +77,7 @@
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 	var _mentor = __webpack_require__(236);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
@@ -88,6 +91,11 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+<<<<<<< HEAD
+	var _contactUs = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./contact-us.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+=======
 	__webpack_require__(245);
 	
 <<<<<<< HEAD
@@ -95,8 +103,9 @@
 =======
 	var _mentee = __webpack_require__(243);
 >>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 	
-	var _mentee2 = _interopRequireDefault(_mentee);
+	__webpack_require__(239);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -131,11 +140,6 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Elegible' },
-								'Eligibility'
-							),
-							_react2.default.createElement(
-								_reactRouter.Link,
 								{ to: 'Mentor' },
 								'Sign Up'
 							),
@@ -151,8 +155,8 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Mentee' },
-								'Mentee'
+								{ to: 'ContactUs' },
+								'Contact Us:'
 							)
 						)
 					)
@@ -169,11 +173,11 @@
 			_reactRouter.Route,
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: Mentee }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26960,7 +26964,11 @@
 			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
 			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
 		home: {
-			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.'
+			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.' },
+		contact: {
+			address: 'New York, NY',
+			phone: '1800',
+			email: '@wetech.com'
 		}
 	};
 	
@@ -26976,6 +26984,11 @@
 		return this.home;
 	};
 	
+<<<<<<< HEAD
+	data.getContact = function () {
+		return this.contact;
+	};
+=======
 	exports.default = data;
 
 /***/ },
@@ -27038,10 +27051,14 @@
 			);
 		}
 	});
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 	
-	exports.default = Elegible;
+	exports.default = data;
 
 /***/ },
+<<<<<<< HEAD
+/* 235 */,
+=======
 <<<<<<< HEAD
 /* 241 */
 /***/ function(module, exports) {
@@ -27071,6 +27088,7 @@
 /***/ },
 /* 242 */
 =======
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 /* 236 */
 >>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
 /***/ function(module, exports, __webpack_require__) {
@@ -27190,10 +27208,10 @@
 	  displayName: 'About',
 	
 	  getInitialState: function getInitialState() {
-	    return { about: {} };
+	    return { about: {}, elegible: {} };
 	  },
 	  componentWillMount: function componentWillMount() {
-	    this.setState({ about: _data2.default.getAbout() });
+	    this.setState({ about: _data2.default.getAbout(), elegible: _data2.default.getElegible() });
 	  },
 	
 	  render: function render() {
@@ -27212,6 +27230,21 @@
 	          'p',
 	          null,
 	          this.state.about.text
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Who is Elegible?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentor
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentee
 	        )
 	      )
 	    );
@@ -27606,6 +27639,9 @@
 
 /***/ },
 <<<<<<< HEAD
+/* 243 */,
+=======
+<<<<<<< HEAD
 /* 249 */
 =======
 /* 243 */
@@ -27673,6 +27709,7 @@
 <<<<<<< HEAD
 /* 250 */
 =======
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 /* 244 */
 >>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
 /***/ function(module, exports, __webpack_require__) {
