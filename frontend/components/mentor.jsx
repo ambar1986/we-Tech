@@ -4,9 +4,10 @@ var Mentor = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<h2 className="title">Sign Up to be a Mentor</h2>
+			<hr className='break' />
+				<center><h2 className="title">Sign Up to be a Mentor</h2></center>
 
-				<form>
+				<center><form>
 				<input
 				className="input"
 				type="text"
@@ -61,11 +62,13 @@ var Mentor = React.createClass({
 				placeholder="Personal Site"
 				/>
 
-				<input
-				className="submit"
-				type="submit"
-				/>
-				</form>
+				<br /><br />
+
+				<button
+				className="button"
+				type="submit">Submit
+				</button>
+				</form></center>
 
 			</div>
 		)

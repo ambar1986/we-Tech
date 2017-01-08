@@ -161,7 +161,10 @@
 			_react2.default.createElement(_reactRouter.Route, { path: 'Register', component: _register2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'MenteeProf', component: _menteeprof2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'MentorProf', component: _mentorprof2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
 		)
 	), document.getElementById('root'));
@@ -26541,7 +26544,7 @@
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -26554,69 +26557,83 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Mentor = _react2.default.createClass({
-		displayName: "Mentor",
+		displayName: 'Mentor',
 	
 		render: function render() {
 			return _react2.default.createElement(
-				"div",
+				'div',
 				null,
+				_react2.default.createElement('hr', { className: 'break' }),
 				_react2.default.createElement(
-					"h2",
-					{ className: "title" },
-					"Sign Up to be a Mentor"
+					'center',
+					null,
+					_react2.default.createElement(
+						'h2',
+						{ className: 'title' },
+						'Sign Up to be a Mentor'
+					)
 				),
 				_react2.default.createElement(
-					"form",
+					'center',
 					null,
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "First Name"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Last Name"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Email"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Description"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Skills"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Education"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "GitHub Link"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "LinkedIn Link"
-					}),
-					_react2.default.createElement("input", {
-						className: "input",
-						type: "text",
-						placeholder: "Personal Site"
-					}),
-					_react2.default.createElement("input", {
-						className: "submit",
-						type: "submit"
-					})
+					_react2.default.createElement(
+						'form',
+						null,
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'First Name'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Last Name'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Email'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Description'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Skills'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Education'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'GitHub Link'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'LinkedIn Link'
+						}),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Personal Site'
+						}),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'button',
+							{
+								className: 'button',
+								type: 'submit' },
+							'Submit'
+						)
+					)
 				)
 			);
 		}
@@ -26854,7 +26871,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.submit {\n\tcursor: pointer;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
