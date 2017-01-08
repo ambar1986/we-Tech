@@ -14,7 +14,7 @@ var Mentee = React.createClass({
 					<input type='Password' placeholder='Password'/>
 					<imput type='text' placeholder='Education' />
 					<input type='text' placeholder='Current Skills'/>
-					<p>Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?</p>
+					Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?
 					<input type='text' placeholder='Skills to Improve On/Gain'/>
 					<input type='url' placeholder='Do you have a Github?'/>
 					<input type='text' placeholder='Anything else we need to know about you'/>

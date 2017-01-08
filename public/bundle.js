@@ -27092,11 +27092,7 @@
 					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
 					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
-					),
+					'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?',
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
 					_react2.default.createElement('input', { type: 'url', placeholder: 'Do you have a Github?' }),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
