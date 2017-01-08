@@ -12,7 +12,8 @@ var ContactUs = React.createClass({
     return (
       <div>
       <center>
-        <h1>Contact Us:</h1>
+
+        <h6>Contact Us:</h6>
         	<p>{this.state.contact.address}</p>
           <p>{this.state.contact.phone}</p>
           <p>{this.state.contact.email}</p>
