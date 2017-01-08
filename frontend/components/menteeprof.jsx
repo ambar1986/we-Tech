@@ -28,4 +28,4 @@ var MenteeProf = React.createClass({
   }
 })
 
-export default MentorProf;
+export default MenteeProf;
