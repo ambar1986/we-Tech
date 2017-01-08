@@ -7,8 +7,11 @@ import Mentee from './mentee.jsx';
 import About from './about.jsx';
 import Login from './login.jsx';
 import ContactUs from './contact-us.jsx';
+import MenteeProf from './menteeprof.jsx';
+import MentorProf from './mentorprof.jsx';
 import '../app.css';
-import '../loginCSS.css'
+import '../loginCSS.css';
+
 var App = React.createClass({
 	render(){
 		return(
@@ -36,12 +39,14 @@ var App = React.createClass({
 ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path='/' component={App}>
-		<IndexRoute component={Home} />
-		<Route path="Mentor" component={Mentor} />
-		<Route path="About" component={About} />
-		<Route path="Login" component={Login} />
-		<Route path="Mentee" component={Mentee} />
-		<Route path="ContactUs" component={ContactUs} />
+			<IndexRoute component={Home} />
+				<Route path="Mentor" component={Mentor} />
+				<Route path="About" component={About} />
+				<Route path="Login" component={Login} />
+				<Route path="Mentee" component={Mentee} />
+				<Route path="ContactUs" component={ContactUs} />
+				<Route path="MenteeProf" component={MenteeProf} />
+				<Route path="MentorProf" component={MentorProf} />
 		</Route>
 	</Router>, 
 	document.getElementById('root'))
