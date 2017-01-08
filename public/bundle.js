@@ -68,6 +68,10 @@
 	
 	var _about2 = _interopRequireDefault(_about);
 	
+	var _login = __webpack_require__(237);
+	
+	var _login2 = _interopRequireDefault(_login);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -79,7 +83,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'logo-class' },
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(237) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(238) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -132,7 +136,7 @@
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: Login }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: Mentee })
 		)
 	), document.getElementById('root'));
@@ -26643,6 +26647,38 @@
 
 /***/ },
 /* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var React = __webpack_require__(1);
+	
+	var Login = React.createClass({
+		displayName: 'Login',
+		render: function render() {
+			return React.createElement(
+				'div',
+				{ id: 'login' },
+				'Login',
+				React.createElement(
+					'form',
+					null,
+					'Email',
+					React.createElement('input', { type: 'text' }),
+					'Password',
+					React.createElement('input', { type: 'Password' }),
+					React.createElement('input', { type: 'button' })
+				)
+			);
+		}
+	});
+	exports.default = Login;
+
+/***/ },
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
