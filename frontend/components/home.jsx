@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import data from './data'
 
 var Home = React.createClass({
 	render: function(){

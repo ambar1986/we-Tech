@@ -60,13 +60,13 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _elegible = __webpack_require__(234);
-	
-	var _elegible2 = _interopRequireDefault(_elegible);
-	
 	var _mentor = __webpack_require__(235);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
+	
+	var _mentee = __webpack_require__(244);
+	
+	var _mentee2 = _interopRequireDefault(_mentee);
 	
 	var _about = __webpack_require__(236);
 	
@@ -76,11 +76,11 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+	var _contactUs = __webpack_require__(246);
+	
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+	
 	__webpack_require__(239);
-	
-	var _mentee = __webpack_require__(244);
-	
-	var _mentee2 = _interopRequireDefault(_mentee);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -111,11 +111,6 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Elegible' },
-								'Eligibility'
-							),
-							_react2.default.createElement(
-								_reactRouter.Link,
 								{ to: 'Mentor' },
 								'Sign Up'
 							),
@@ -131,8 +126,8 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Mentee' },
-								'Mentee'
+								{ to: 'ContactUs' },
+								'Contact Us:'
 							)
 						)
 					)
@@ -149,11 +144,11 @@
 			_reactRouter.Route,
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26503,6 +26498,10 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Home = _react2.default.createClass({
@@ -26524,64 +26523,7 @@
 	exports.default = Home;
 
 /***/ },
-/* 234 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(237);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Elegible = _react2.default.createClass({
-		displayName: 'Elegible',
-	
-		getInitialState: function getInitialState() {
-			return { elegible: {} };
-		},
-		componentWillMount: function componentWillMount() {
-			this.setState({ elegible: _data2.default.getElegible() });
-		},
-		render: function render() {
-			return _react2.default.createElement(
-				'center',
-				null,
-				_react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'h1',
-						null,
-						'Who is Elegible?'
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						this.state.elegible.mentor
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						this.state.elegible.mentee
-					)
-				)
-			);
-		}
-	});
-	
-	exports.default = Elegible;
-
-/***/ },
+/* 234 */,
 /* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26692,10 +26634,10 @@
 	  displayName: 'About',
 	
 	  getInitialState: function getInitialState() {
-	    return { about: {} };
+	    return { about: {}, elegible: {} };
 	  },
 	  componentWillMount: function componentWillMount() {
-	    this.setState({ about: _data2.default.getAbout() });
+	    this.setState({ about: _data2.default.getAbout(), elegible: _data2.default.getElegible() });
 	  },
 	
 	  render: function render() {
@@ -26714,6 +26656,21 @@
 	          'p',
 	          null,
 	          this.state.about.text
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Who is Elegible?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentor
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentee
 	        )
 	      )
 	    );
@@ -26735,7 +26692,14 @@
 		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
 		elegible: {
 			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
-			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' }
+			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
+		home: {
+			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.' },
+		contact: {
+			address: 'New York, NY',
+			phone: '1800',
+			email: '@wetech.com'
+		}
 	};
 	
 	data.getAbout = function () {
@@ -26744,6 +26708,14 @@
 	
 	data.getElegible = function () {
 		return this.elegible;
+	};
+	
+	data.getHome = function () {
+		return this.home;
+	};
+	
+	data.getContact = function () {
+		return this.contact;
 	};
 	
 	exports.default = data;
@@ -27156,29 +27128,38 @@
 			return _react2.default.createElement(
 				'div',
 				{ id: 'login' },
-				'Register to get a mentor',
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Register to get a mentor'
+				),
 				_react2.default.createElement(
 					'form',
 					null,
 					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('imput', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
 					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement(
 						'p',
 						null,
 						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
 					),
+					_react2.default.createElement('input', { type: 'text' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('input', { type: 'url', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement(
-						'input',
-						{ type: 'button' },
-						'Create an account!'
-					)
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
 				)
 			);
 		}
@@ -27191,6 +27172,70 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "1a7b56fa8cb53a108720ca152ccac6c4.jpg";
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContactUs = _react2.default.createClass({
+	  displayName: 'ContactUs',
+	
+	  getInitialState: function getInitialState() {
+	    return { contact: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ contact: _data2.default.getContact() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h6',
+	          null,
+	          'Contact Us:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.address
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.phone
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.email
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ContactUs;
 
 /***/ }
 /******/ ]);
