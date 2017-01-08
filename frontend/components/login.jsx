@@ -8,6 +8,7 @@ var Login = React.createClass({
 	render(){
 		return(
 			<div id='login'>
+			<hr className='break' />
 				<div className= "container">
 					<div className="wrapper">
 						<form name="Login_Form" className="form-signin">       

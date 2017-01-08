@@ -15,22 +15,18 @@ var MenteeProf = React.createClass({
       console.log("working?????????????????")
     return (
       <div>
-        <div className="container">
-              <div className="row">
-              <div className="col-md-5  toppad  pull-right col-md-offset-3 ">
-                
-               <br />
-              </div>
-                <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
-                  <div className="panel panel-info">
-                  <Link to="/" className="btn btn-primary">Logout</Link>
-                    <div className="panel-heading">
-                      <h3 className="panel-title">Vanessa Montoya</h3>
-                    </div>
+      <hr className='break' />
+
+              
+                      <h2 className="mentee">Samantha Thomas</h2>
+                    
                     <div className="panel-body">
                       <div className="row">
-                       <center> <div className="col-md-3 col-lg-3 " > <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" className="img-circle img-responsive" /> </div></center>
-                        <div className=" col-md-9 col-lg-9 "> 
+                       <center> 
+                       <div className="col-md-3 col-lg-3 " > <img alt="User Pic" src="http://www.creativedigest.co.uk/wp-content/uploads/2014/03/greta-soloman-1200x900.jpg" className="img-circle img-responsive" /> </div>
+                       </center>
+                       <br /><br /> <br />
+                        <div className=" col-md-6 col-lg-6 "> 
                           <table className="table table-user-information">
                           <tbody>
                               <tr>
@@ -51,26 +47,23 @@ var MenteeProf = React.createClass({
                               </tr>
                               <tr>
                                 <td>Email</td>
-                                <td><Link to="Homefo@support.com">Vanessa@gmail.com</Link></td>
+                                <td><Link to="Homefo@support.com">sam@gmail.com</Link></td>
                               </tr>
-                               
                               
-                             <center> <td>This is your match:</td></center>
-                      
-                              
-                            
                              
                             </tbody>
                           </table>
-                       <center>   <Link to="MentorProf" className="btn btn-primary">See your mentor!</Link></center>
+                  
+                       <center>  
+
+                       <Link to="MentorProf" className="button">See your mentor!</Link>
+                       <Link to="/" className="button">Logout</Link>
+                       </center>
                         </div>
                       </div>
                     </div>
-                                 </div>
-                </div>
-              </div>
-           </div>
-
+                              
+            
 
 
 
