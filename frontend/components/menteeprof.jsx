@@ -18,8 +18,6 @@ var MenteeProf = React.createClass({
         <div className="container">
               <div className="row">
               <div className="col-md-5  toppad  pull-right col-md-offset-3 ">
-                
-               <br />
               </div>
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
                   <div className="panel panel-info">
@@ -53,36 +51,18 @@ var MenteeProf = React.createClass({
                                 <td>Email</td>
                                 <td><Link to="Homefo@support.com">Vanessa@gmail.com</Link></td>
                               </tr>
-                               
-                              
-                             <center> <td>This is your match:</td></center>
-                      
-                              
-                            
-                             
+                              <td>This is your match:</td>
                             </tbody>
                           </table>
                        <center>   <Link to="MentorProf" className="btn btn-primary">See your mentor!</Link></center>
                         </div>
                       </div>
                     </div>
-                                 </div>
+                  </div>
                 </div>
               </div>
            </div>
-
-
-
-
-
  {this.props.children}
-
-
-
-
-
-
-
       </div>
     )
   }
