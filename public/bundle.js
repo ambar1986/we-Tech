@@ -72,8 +72,9 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+
 	var _mentee = __webpack_require__(244);
-	
+
 	var _mentee2 = _interopRequireDefault(_mentee);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -87,7 +88,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'logo-class' },
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(245) })
+
 				),
 				_react2.default.createElement(
 					'nav',
@@ -27114,6 +27115,44 @@
 
 /***/ },
 /* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentee = _react2.default.createClass({
+		displayName: 'Mentee',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ id: 'login' },
+				'Register to get a mentor',
+				_react2.default.createElement(
+					'form',
+					null,
+					'Email',
+					_react2.default.createElement('input', { type: 'text' }),
+					'Password',
+					_react2.default.createElement('input', { type: 'Password' }),
+					_react2.default.createElement('input', { type: 'button' })
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentee;
+
+/***/ },
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
