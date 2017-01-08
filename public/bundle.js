@@ -60,15 +60,15 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _elegible = __webpack_require__(234);
+	var _elegible = __webpack_require__(235);
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
-	var _mentor = __webpack_require__(235);
+	var _mentor = __webpack_require__(236);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
-	var _about = __webpack_require__(236);
+	var _about = __webpack_require__(237);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
@@ -78,7 +78,7 @@
 	
 	__webpack_require__(239);
 	
-	var _mentee = __webpack_require__(244);
+	var _mentee = __webpack_require__(243);
 	
 	var _mentee2 = _interopRequireDefault(_mentee);
 	
@@ -93,7 +93,7 @@
 				_react2.default.createElement(
 					'center',
 					null,
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(243) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(244) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -26496,35 +26496,88 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _data = __webpack_require__(234);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Home = _react2.default.createClass({
-		displayName: 'Home',
+	  displayName: 'Home',
 	
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'h2',
-					null,
-					'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology. '
-				)
-			);
-		}
+	  getInitialState: function getInitialState() {
+	    return { home: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ home: _data2.default.getHome() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Mission'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.home.mission
+	        )
+	      )
+	    );
+	  }
 	});
 	
 	exports.default = Home;
 
 /***/ },
 /* 234 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var data = {
+		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
+		elegible: {
+			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
+			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
+		home: {
+			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.'
+		}
+	};
+	
+	data.getAbout = function () {
+		return this.about;
+	};
+	
+	data.getElegible = function () {
+		return this.elegible;
+	};
+	
+	data.getHome = function () {
+		return this.home;
+	};
+	
+	exports.default = data;
+
+/***/ },
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26537,7 +26590,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(237);
+	var _data = __webpack_require__(234);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26582,7 +26635,7 @@
 	exports.default = Elegible;
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26669,7 +26722,7 @@
 	exports.default = Mentor;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26682,7 +26735,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(237);
+	var _data = __webpack_require__(234);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26721,32 +26774,6 @@
 	});
 	
 	exports.default = About;
-
-/***/ },
-/* 237 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	var data = {
-		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
-		elegible: {
-			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
-			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' }
-	};
-	
-	data.getAbout = function () {
-		return this.about;
-	};
-	
-	data.getElegible = function () {
-		return this.elegible;
-	};
-	
-	exports.default = data;
 
 /***/ },
 /* 238 */
@@ -27132,12 +27159,6 @@
 /* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
-
-/***/ },
-/* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -27185,6 +27206,12 @@
 	});
 	
 	exports.default = Mentee;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
 
 /***/ }
 /******/ ]);

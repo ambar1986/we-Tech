@@ -1,13 +1,23 @@
-import React from 'react';
+import React from 'react'
+import data from './data'
 
 var Home = React.createClass({
-	render: function(){
-		return(
-			<div>
-				<h2>WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology. </h2>
-			</div>
-		)
-	}
+	getInitialState:function(){
+		return {home:{}}
+	},
+	componentWillMount(){
+		this.setState({home: data.getHome()})
+	},
+  	render: function() {
+    return (
+      <div>
+      <center>
+        <h1>Mission</h1>
+        	<p>{this.state.home.mission}</p>
+      </center>
+      </div>
+    )
+  }
 })
 
 export default Home;
