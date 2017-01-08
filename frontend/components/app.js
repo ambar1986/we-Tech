@@ -14,7 +14,7 @@ import '../app.css';
 import '../loginCSS.css'
 import Register from './register';
 import ThankMessage from './thankMessage';
-import ContactMessage from './ContactMessage';
+import ContactMessage from './contactMessage';
 
 var App = React.createClass({
 	render(){
