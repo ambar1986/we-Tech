@@ -5,26 +5,19 @@ import MentorProf from './mentorprof.jsx';
 import Home from './home.jsx';
 
 var MenteeProf = React.createClass({
-	getInitialState:function(){
-		return {users:{}}
-	},
-	componentWillMount(){
-		this.setState({users: data.getUser()})
-	},
   	render: function() {
     return (
-      <div>
+      <center><div>
       <hr className='break' />
 
-              
-                      <h2 className="mentee">Samantha Thomas</h2>
+       <h2 className="mentee">Samantha Thomas</h2>
                   
-                    <div className="panel-body">
-                      <div className="row">
-                       <center> 
-                       <div className="col-md-3 col-lg-3 " > <img alt="User Pic" src="http://www.creativedigest.co.uk/wp-content/uploads/2014/03/greta-soloman-1200x900.jpg" className="img-circle img-responsive" /> </div>
-                       </center>
-                       <br /><br /> <br />
+          <div className="panel-body">
+            <div className="row">
+                       
+              <div className="col-md-3 col-lg-3 " > <img alt="User Pic" src="http://www.creativedigest.co.uk/wp-content/uploads/2014/03/greta-soloman-1200x900.jpg" className="img-circle img-responsive" /> </div>
+                     
+                    
                         <div className=" col-md-6 col-lg-6 "> 
                           <table className="table table-user-information">
                           <tbody>
@@ -56,20 +49,16 @@ var MenteeProf = React.createClass({
                             </tbody>
                           </table>
                   
-                       <center>  
+                    
 
                        <Link to="MentorProf" className="button">See your mentor!</Link>
                        <Link to="/" className="button">Logout</Link>
-                       </center>
+                      
                         </div>
                       </div>
                     </div>
-                      
- 
-      
 
- {this.props.children}
-      </div>
+      </div></center>
     )
   }
 })
