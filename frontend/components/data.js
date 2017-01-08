@@ -8,8 +8,10 @@ let data = {
 	contact: {
 		address: 'New York, NY',
 		phone: '1800',
-		email:'@wetech.com'
-	}
+		email:'@wetech.com'},
+	users:{ 
+		mentor:[{name:'Juan', skills:'JavaScript'},{name: 'Ambar', skills:'JavaScript'}],
+		mentee:[{name:"Vanessa", skills:'JavaScript'},{name:'Salina', skills:'JavaScript'}]}
 }
 
 data.getAbout = function() {
@@ -26,6 +28,10 @@ data.getHome = function(){
 
 data.getContact = function(){
 	return this.contact
+}
+
+data.getUser = function(){
+	return this.users
 }
 
 export default data;
