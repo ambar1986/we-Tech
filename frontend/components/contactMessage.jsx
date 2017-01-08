@@ -6,7 +6,7 @@ var ContactMessage = React.createClass({
       <div>
       <hr className='break' />
       <center>
-            <h2>Thank you for your contacting us!</h2>
+            <h2>Thank you for contacting us!</h2>
             <p>We will get back to you shortly.</p>
       </center>
       </div>

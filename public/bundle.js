@@ -38120,7 +38120,7 @@
 	        _react2.default.createElement(
 	          'h2',
 	          null,
-	          'Thank you for your contacting us!'
+	          'Thank you for contacting us!'
 	        ),
 	        _react2.default.createElement(
 	          'p',
