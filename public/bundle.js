@@ -60,7 +60,14 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
+<<<<<<< HEAD
 	var _elegible = __webpack_require__(241);
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	var _elegible = __webpack_require__(240);
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
@@ -69,6 +76,21 @@
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
 	var _about = __webpack_require__(243);
+<<<<<<< HEAD
+=======
+=======
+	var _elegible = __webpack_require__(235);
+	
+	var _elegible2 = _interopRequireDefault(_elegible);
+	
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
+	var _mentor = __webpack_require__(236);
+	
+	var _mentor2 = _interopRequireDefault(_mentor);
+	
+	var _about = __webpack_require__(237);
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 	
 	var _about2 = _interopRequireDefault(_about);
 	
@@ -76,11 +98,23 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+<<<<<<< HEAD
+	var _contactUs = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./contact-us.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+=======
 	__webpack_require__(245);
 	
 	var _mentee = __webpack_require__(249);
+<<<<<<< HEAD
+=======
+=======
+	var _mentee = __webpack_require__(243);
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 	
-	var _mentee2 = _interopRequireDefault(_mentee);
+	__webpack_require__(239);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -111,11 +145,6 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Elegible' },
-								'Eligibility'
-							),
-							_react2.default.createElement(
-								_reactRouter.Link,
 								{ to: 'Mentor' },
 								'Sign Up'
 							),
@@ -131,8 +160,8 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Mentee' },
-								'Mentee'
+								{ to: 'ContactUs' },
+								'Contact Us:'
 							)
 						)
 					)
@@ -149,11 +178,11 @@
 			_reactRouter.Route,
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: Mentee }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26957,10 +26986,18 @@
 		return this.home;
 	};
 	
+<<<<<<< HEAD
 	data.getContact = function () {
 		return this.contact;
 	};
 	
+=======
+<<<<<<< HEAD
+	data.getContact = function () {
+		return this.contact;
+	};
+=======
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 	exports.default = data;
 
 /***/ },
@@ -27018,11 +27055,50 @@
 			);
 		}
 	});
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
 	
-	exports.default = Elegible;
+	exports.default = data;
+
+/***/ },
+<<<<<<< HEAD
+/* 242 */
+=======
+<<<<<<< HEAD
+/* 235 */,
+=======
+<<<<<<< HEAD
+/* 241 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var data = {
+		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
+		elegible: {
+			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
+			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' }
+	};
+	
+	data.getAbout = function () {
+		return this.about;
+	};
+	
+	data.getElegible = function () {
+		return this.elegible;
+	};
+	
+	exports.default = data;
 
 /***/ },
 /* 242 */
+=======
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
+/* 236 */
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -27132,10 +27208,10 @@
 	  displayName: 'About',
 	
 	  getInitialState: function getInitialState() {
-	    return { about: {} };
+	    return { about: {}, elegible: {} };
 	  },
 	  componentWillMount: function componentWillMount() {
-	    this.setState({ about: _data2.default.getAbout() });
+	    this.setState({ about: _data2.default.getAbout(), elegible: _data2.default.getElegible() });
 	  },
 	
 	  render: function render() {
@@ -27154,6 +27230,21 @@
 	          'p',
 	          null,
 	          this.state.about.text
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Who is Elegible?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentor
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentee
 	        )
 	      )
 	    );
@@ -27543,6 +27634,13 @@
 
 
 /***/ },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* 243 */,
+=======
+<<<<<<< HEAD
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 /* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -27605,6 +27703,13 @@
 
 /***/ },
 /* 250 */
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
+/* 244 */
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
