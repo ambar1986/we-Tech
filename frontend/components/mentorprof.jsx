@@ -11,6 +11,7 @@ var MentorProf = React.createClass({
 		this.setState({users: data.getUser()})
 	},
   	render: function() {
+      console.log("mentorprof")
     return (
       <div>
       <center>
