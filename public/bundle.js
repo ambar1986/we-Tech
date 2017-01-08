@@ -68,6 +68,14 @@
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
+	var _about = __webpack_require__(238);
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _login = __webpack_require__(240);
+	
+	var _login2 = _interopRequireDefault(_login);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -104,6 +112,21 @@
 								_reactRouter.Link,
 								{ to: 'Mentor' },
 								'Sign Up'
+							),
+							_react2.default.createElement(
+								_reactRouter.Link,
+								{ to: 'About' },
+								'About'
+							),
+							_react2.default.createElement(
+								_reactRouter.Link,
+								{ to: 'Login' },
+								'Login'
+							),
+							_react2.default.createElement(
+								_reactRouter.Link,
+								{ to: 'Mentee' },
+								'Mentee'
 							)
 						)
 					)
@@ -121,7 +144,10 @@
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _login2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26637,6 +26663,113 @@
 	});
 	
 	exports.default = Mentor;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(239);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var About = _react2.default.createClass({
+	  displayName: 'About',
+	
+	  getInitialState: function getInitialState() {
+	    return { about: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ about: _data2.default.getAbout() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'About'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.about.text
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = About;
+
+/***/ },
+/* 239 */
+/***/ function(module, exports) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var data = {
+		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
+		elegible: {}
+	
+	};
+	
+	data.getAbout = function () {
+		return this.about;
+	};
+	
+	exports.default = data;
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var React = __webpack_require__(1);
+	
+	var Login = React.createClass({
+		displayName: 'Login',
+		render: function render() {
+			return React.createElement(
+				'div',
+				{ id: 'login' },
+				'Login',
+				React.createElement(
+					'form',
+					null,
+					'Email',
+					React.createElement('input', { type: 'text' }),
+					'Password',
+					React.createElement('input', { type: 'Password' }),
+					React.createElement('input', { type: 'button' })
+				)
+			);
+		}
+	});
+	exports.default = Login;
 
 /***/ }
 /******/ ]);
