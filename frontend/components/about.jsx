@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Register from './register';
+import {Link} from 'react-router';
 
 var About = React.createClass({
   	render: function() {
@@ -33,7 +35,7 @@ var About = React.createClass({
             Currently, the mentorship is only available to those living in New York City.
           </p>
           <p>
-            Both potential mentors and mentees must fill out an application on the Sign Up page. WeTech will match candidates together based on skillsets and preferences.
+            Both potential mentors and mentees must fill out an application on the <Link to='Register'>Registration</Link> page. WeTech will match candidates together based on skillsets and preferences.
           </p>
           <p>
             In order to be a mentor, you should be working professionally in the tech industry. You do not have to be female to apply.

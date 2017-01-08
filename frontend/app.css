@@ -33,13 +33,33 @@ a:link {
 	margin-right: 25%;
 }
 
-.input {
+/*.input {
 	border: none;
 	border-bottom: 2px solid black;
 	width: 600px;
 	padding: 12px 20px;
 	left: 20%;
 	right: 20%;
+}*/
+.desc {
+	width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFF0F5;
+    resize: none;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #FFF0F5;
+    color: black;
 }
 
 .button {

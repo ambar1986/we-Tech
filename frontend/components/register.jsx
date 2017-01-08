@@ -8,16 +8,17 @@ var Register = React.createClass({
 		return (
 			<div>
 				<hr className='break' />
-
+				<center>
 				<h2>Join Our Mission</h2>
 
 				<Link to='Mentor'><button
-				className="submit"
+				className="button"
 				type="submit">Mentor Application</button></Link>
 
 				<Link to='Mentee'><button
-				className="submit"
+				className="button"
 				type="submit">Mentee Application</button></Link>
+				</center>
 			</div>
 		)
 	}

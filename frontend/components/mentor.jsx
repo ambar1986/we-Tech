@@ -1,4 +1,6 @@
 import React from 'react';
+import ThankMessage from './thankMessage';
+import {Link} from 'react-router';
 
 var Mentor = React.createClass({
 	render: function(){
@@ -27,7 +29,7 @@ var Mentor = React.createClass({
 				/>
 
 				<input
-				className="input"
+				className="desc"
 				type="text"
 				placeholder="Description"
 				/>
@@ -64,10 +66,10 @@ var Mentor = React.createClass({
 
 				<br /><br />
 
-				<button
+				<Link to='ThankMessage'><button
 				className="button"
 				type="submit">Submit
-				</button>
+				</button></Link>
 				</form></center>
 
 			</div>

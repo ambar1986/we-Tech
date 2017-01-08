@@ -96,6 +96,10 @@
 	
 	var _register2 = _interopRequireDefault(_register);
 	
+	var _thankMessage = __webpack_require__(252);
+	
+	var _thankMessage2 = _interopRequireDefault(_thankMessage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -165,7 +169,8 @@
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'MenteeProf', component: _menteeprof2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'MentorProf', component: _mentorprof2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ThankMessage', component: _thankMessage2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26554,6 +26559,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _thankMessage = __webpack_require__(252);
+	
+	var _thankMessage2 = _interopRequireDefault(_thankMessage);
+	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Mentor = _react2.default.createClass({
@@ -26595,7 +26606,7 @@
 							placeholder: 'Email'
 						}),
 						_react2.default.createElement('input', {
-							className: 'input',
+							className: 'desc',
 							type: 'text',
 							placeholder: 'Description'
 						}),
@@ -26627,11 +26638,15 @@
 						_react2.default.createElement('br', null),
 						_react2.default.createElement('br', null),
 						_react2.default.createElement(
-							'button',
-							{
-								className: 'button',
-								type: 'submit' },
-							'Submit'
+							_reactRouter.Link,
+							{ to: 'ThankMessage' },
+							_react2.default.createElement(
+								'button',
+								{
+									className: 'button',
+									type: 'submit' },
+								'Submit'
+							)
 						)
 					)
 				)
@@ -26645,7 +26660,7 @@
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26655,80 +26670,92 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _register = __webpack_require__(249);
+	
+	var _register2 = _interopRequireDefault(_register);
+	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var About = _react2.default.createClass({
-	  displayName: "About",
+	  displayName: 'About',
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      "div",
+	      'div',
 	      null,
-	      _react2.default.createElement("hr", { className: "break" }),
+	      _react2.default.createElement('hr', { className: 'break' }),
 	      _react2.default.createElement(
-	        "div",
-	        { className: "about" },
+	        'div',
+	        { className: 'about' },
 	        _react2.default.createElement(
-	          "h2",
+	          'h2',
 	          null,
-	          "What is WeTech?"
+	          'What is WeTech?'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "WeTech is a mentorship program that matches women pursuing a career in technology with a mentor who is currently working in the industry and can provide guidance and advice."
+	          'WeTech is a mentorship program that matches women pursuing a career in technology with a mentor who is currently working in the industry and can provide guidance and advice.'
 	        ),
 	        _react2.default.createElement(
-	          "h2",
+	          'h2',
 	          null,
-	          "Why do we do this?"
+	          'Why do we do this?'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "By 2020, 1.4 million jobs will open in computer science. Yet, according to a recent article from TechCrunch, only 29% of graduates will be qualified to fill those positions - and less than 3% will be filled by women. This is a serious domestic issue that we are hoping to tackle."
+	          'By 2020, 1.4 million jobs will open in computer science. Yet, according to a recent article from TechCrunch, only 29% of graduates will be qualified to fill those positions - and less than 3% will be filled by women. This is a serious domestic issue that we are hoping to tackle.'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "Since the 1980s, women in computer science have dropped from 37% to less than 18% today. Studies have shown that aptitude isn't the problem, it's the culture. The male-dominated field and the lack of female role models have made the industry unappealing to women."
+	          'Since the 1980s, women in computer science have dropped from 37% to less than 18% today. Studies have shown that aptitude isn\'t the problem, it\'s the culture. The male-dominated field and the lack of female role models have made the industry unappealing to women.'
 	        ),
-	        _react2.default.createElement("br", null),
-	        _react2.default.createElement("img", { className: "graph", src: "http://i.huffpost.com/gen/2772382/original.jpg" }),
+	        _react2.default.createElement('br', null),
+	        _react2.default.createElement('img', { className: 'graph', src: 'http://i.huffpost.com/gen/2772382/original.jpg' }),
 	        _react2.default.createElement(
-	          "h2",
+	          'h2',
 	          null,
-	          "How does WeTech work to promote changes?"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          null,
-	          "Accepted mentees will be matched with a mentor that has the skills the mentee is hoping to improve on. Both mentors and mentees are committed to meeting weekly to discuss and advise on projects and address any issues."
+	          'How does WeTech work to promote changes?'
 	        ),
 	        _react2.default.createElement(
-	          "h2",
+	          'p',
 	          null,
-	          "Who is eligible?"
+	          'Accepted mentees will be matched with a mentor that has the skills the mentee is hoping to improve on. Both mentors and mentees are committed to meeting weekly to discuss and advise on projects and address any issues.'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'h2',
 	          null,
-	          "Currently, the mentorship is only available to those living in New York City."
+	          'Who is eligible?'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "Both potential mentors and mentees must fill out an application on the Sign Up page. WeTech will match candidates together based on skillsets and preferences."
+	          'Currently, the mentorship is only available to those living in New York City.'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "In order to be a mentor, you should be working professionally in the tech industry. You do not have to be female to apply."
+	          'Both potential mentors and mentees must fill out an application on the ',
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: 'Register' },
+	            'Registration'
+	          ),
+	          ' page. WeTech will match candidates together based on skillsets and preferences.'
 	        ),
 	        _react2.default.createElement(
-	          "p",
+	          'p',
 	          null,
-	          "To be a mentee, you must be a female, 18 years or older, who is interested in learning to code. Ideally, you are currently a programming student. You also agree to our pay-it-forward initiative, where upon securing a technology position, you will return as a mentor."
+	          'In order to be a mentor, you should be working professionally in the tech industry. You do not have to be female to apply.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'To be a mentee, you must be a female, 18 years or older, who is interested in learning to code. Ideally, you are currently a programming student. You also agree to our pay-it-forward initiative, where upon securing a technology position, you will return as a mentor.'
 	        )
 	      )
 	    );
@@ -26794,7 +26821,15 @@
 		value: true
 	});
 	
+	var _menteeprof = __webpack_require__(250);
+	
+	var _menteeprof2 = _interopRequireDefault(_menteeprof);
+	
+	var _reactRouter = __webpack_require__(178);
+	
 	__webpack_require__(247);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var React = __webpack_require__(1);
 	
@@ -26871,7 +26906,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -27204,6 +27239,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _thankMessage = __webpack_require__(252);
+	
+	var _thankMessage2 = _interopRequireDefault(_thankMessage);
+	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Mentee = _react2.default.createClass({
@@ -27211,39 +27252,70 @@
 		render: function render() {
 			return _react2.default.createElement(
 				'div',
-				{ id: 'login' },
+				null,
+				_react2.default.createElement('hr', { className: 'break' }),
 				_react2.default.createElement(
-					'h1',
+					'center',
 					null,
-					'Register to get a mentor'
-				),
-				_react2.default.createElement(
-					'form',
-					null,
-					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
-					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('br', null),
 					_react2.default.createElement(
-						'p',
+						'h2',
 						null,
-						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
+						'Sign Up to be a Mentee'
 					),
-					_react2.default.createElement('input', { type: 'text' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
+					_react2.default.createElement(
+						'form',
+						null,
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'First Name' }),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Last Name' }),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Email' }),
+						_react2.default.createElement('input', {
+							className: 'desc',
+							type: 'text',
+							placeholder: 'Description'
+						}),
+						_react2.default.createElement('imput', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Education' }),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Current Skills' }),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'Skills to Improve On/Gain' }),
+						_react2.default.createElement('input', {
+							className: 'input',
+							type: 'text',
+							placeholder: 'GitHub Link if Applicable' }),
+						_react2.default.createElement('input', {
+							className: 'desc',
+							type: 'text',
+							placeholder: 'Anything else we need to know about you?' }),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							_reactRouter.Link,
+							{ to: 'ThankMessage' },
+							_react2.default.createElement(
+								'button',
+								{
+									className: 'button',
+									type: 'submit' },
+								'Submit'
+							)
+						)
+					)
 				)
 			);
 		}
@@ -27407,30 +27479,34 @@
 				null,
 				_react2.default.createElement('hr', { className: 'break' }),
 				_react2.default.createElement(
-					'h2',
+					'center',
 					null,
-					'Join Our Mission'
-				),
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: 'Mentor' },
 					_react2.default.createElement(
-						'button',
-						{
-							className: 'submit',
-							type: 'submit' },
-						'Mentor Application'
-					)
-				),
-				_react2.default.createElement(
-					_reactRouter.Link,
-					{ to: 'Mentee' },
+						'h2',
+						null,
+						'Join Our Mission'
+					),
 					_react2.default.createElement(
-						'button',
-						{
-							className: 'submit',
-							type: 'submit' },
-						'Mentee Application'
+						_reactRouter.Link,
+						{ to: 'Mentor' },
+						_react2.default.createElement(
+							'button',
+							{
+								className: 'button',
+								type: 'submit' },
+							'Mentor Application'
+						)
+					),
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: 'Mentee' },
+						_react2.default.createElement(
+							'button',
+							{
+								className: 'button',
+								type: 'submit' },
+							'Mentee Application'
+						)
 					)
 				)
 			);
@@ -27519,7 +27595,7 @@
 	  }
 	});
 	
-	exports.default = _mentorprof2.default;
+	exports.default = MenteeProf;
 
 /***/ },
 /* 251 */
@@ -27607,6 +27683,50 @@
 	});
 	
 	exports.default = MentorProf;
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ThankMessage = _react2.default.createClass({
+	  displayName: 'ThankMessage',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement('hr', { className: 'break' }),
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Thank you for your interest in the mentorship!'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We will review your application and get back to you shortly.'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ThankMessage;
 
 /***/ }
 /******/ ]);

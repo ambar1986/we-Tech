@@ -12,6 +12,7 @@ import MentorProf from './mentorprof.jsx';
 import '../app.css';
 import '../loginCSS.css'
 import Register from './register';
+import ThankMessage from './thankMessage';
 
 var App = React.createClass({
 	render(){
@@ -48,6 +49,7 @@ ReactDOM.render(
 		<Route path="MenteeProf" component={MenteeProf} />
 		<Route path="MentorProf" component={MentorProf} />
 		<Route path="ContactUs" component={ContactUs} />
+		<Route path="ThankMessage" component={ThankMessage} />
 		</Route>
 	</Router>, 
 	document.getElementById('root'))

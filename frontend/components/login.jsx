@@ -1,6 +1,6 @@
 var React = require('react');
 import  MenteeProf from './menteeprof.jsx'
-import {Link} fron 'react-router'
+import {Link} from 'react-router'
 import '../loginCSS.css'
 
 var Login = React.createClass({

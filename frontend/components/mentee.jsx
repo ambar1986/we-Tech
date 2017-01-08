@@ -1,33 +1,69 @@
-import React from 'react'
-
+import React from 'react';
+import ThankMessage from './thankMessage';
+import {Link} from 'react-router';
 
 var Mentee = React.createClass({
 	render(){
 		return(
-			<div id='login'>
-				<h1>Register to get a mentor</h1>
+			<div>
+			<hr className='break' />
+				<center>
+				<h2>Sign Up to be a Mentee</h2>
 				<form>
-					<input type='text' placeholder='First Name'/>
-					<input type='text' placeholder='Last Name' />
-					<br/>
-					<input type='email' placeholder='Email' />
-					<input type='Password' placeholder='Password'/>
-					<br/>
-					<imput type='text' placeholder='Education' />
-					<br/>
-					<p>Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?</p>
-					<input type='text' />
-					<br/>
-					<input type='text' placeholder='Current Skills'/>
-					<br/>
-	 				<input type='text' placeholder='Skills to Improve On/Gain'/>
-	 				<br/>
-	 				<input type='text' placeholder='Do you have a Github?'/>
-	 				<br/>
-	 				<input type='text' placeholder='Anything else we need to know about you'/>
-	 					<br/>
-	 				<input type='submit' placeholder='Create an account!'/>	
+					<input 
+					className="input"
+					type='text' 
+					placeholder='First Name'/>
+
+					<input 
+					className="input"
+					type='text' 
+					placeholder='Last Name' />
+					
+					<input 
+					className="input"
+					type='text' 
+					placeholder='Email' />
+
+					<input
+					className="desc"
+					type="text"
+					placeholder="Description"
+					/>
+					
+					<imput 
+					className="input"
+					type='text' 
+					placeholder='Education' />
+					
+					<input 
+					className="input"
+					type='text' 
+					placeholder='Current Skills'/>
+					
+	 				<input 
+	 				className="input"
+	 				type='text' 
+	 				placeholder='Skills to Improve On/Gain'/>
+	 				
+	 				<input 
+	 				className="input"
+	 				type='text' 
+	 				placeholder='GitHub Link if Applicable'/>
+	 				
+	 				<input
+	 				className="desc" 
+	 				type='text' 
+	 				placeholder='Anything else we need to know about you?'/>
+
+	 				<br /><br />
+	 					
+	 				<Link to='ThankMessage'><button
+	 				className='button' 
+	 				type="submit">Submit
+	 				</button></Link>	
 				</form>
+				</center>
 			</div>
 		)
 	}
