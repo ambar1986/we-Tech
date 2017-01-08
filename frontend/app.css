@@ -32,3 +32,7 @@ a:link {
     margin-left: 25%;
 	margin-right: 25%;
 }
+
+.submit {
+	cursor: pointer;
+}

@@ -9,6 +9,8 @@ import Login from './login.jsx';
 import ContactUs from './contact-us.jsx';
 import '../app.css';
 import '../loginCSS.css'
+import Register from './register';
+
 var App = React.createClass({
 	render(){
 		return(
@@ -20,10 +22,10 @@ var App = React.createClass({
 		          <div className="container-fluid">
 		            <div className="nav navbar-nav">
 		              <Link to='/'>Home</Link> 
-		              <Link to='Mentor'>Sign Up</Link>
 		              <Link to='About'>About</Link>
+		              <Link to='Register'>Registration</Link>
 		              <Link to='Login'>Login</Link>
-		              <Link to='ContactUs'>Contact Us:</Link>
+		              <Link to='ContactUs'>Contact Us</Link>
 	            	</div>
 	          	  </div>
 	        	</nav>
@@ -37,7 +39,7 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path='/' component={App}>
 		<IndexRoute component={Home} />
-		<Route path="Mentor" component={Mentor} />
+		<Route path="Register" component={Register} />
 		<Route path="About" component={About} />
 		<Route path="Login" component={Login} />
 		<Route path="Mentee" component={Mentee} />

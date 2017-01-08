@@ -82,6 +82,12 @@
 	
 	__webpack_require__(239);
 	
+	__webpack_require__(247);
+	
+	var _register = __webpack_require__(249);
+	
+	var _register2 = _interopRequireDefault(_register);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -97,7 +103,7 @@
 				),
 				_react2.default.createElement(
 					'nav',
-					{ className: 'navbar navbar-inverse' },
+					{ className: ' navbar-inverse' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'container-fluid' },
@@ -111,13 +117,13 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Mentor' },
-								'Sign Up'
+								{ to: 'About' },
+								'About'
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'About' },
-								'About'
+								{ to: 'Register' },
+								'Registration'
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
@@ -127,7 +133,7 @@
 							_react2.default.createElement(
 								_reactRouter.Link,
 								{ to: 'ContactUs' },
-								'Contact Us:'
+								'Contact Us'
 							)
 						)
 					)
@@ -144,7 +150,7 @@
 			_reactRouter.Route,
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'Register', component: _register2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default }),
@@ -26725,8 +26731,10 @@
 		contact: {
 			address: 'New York, NY',
 			phone: '1800',
-			email: '@wetech.com'
-		}
+			email: '@wetech.com' },
+		users: {
+			mentor: [{ name: 'Juan', skills: 'JavaScript', description: 'I love to code' }, { name: 'Ambar', skills: 'JavaScript', description: 'Coffee and code' }],
+			mentee: [{ name: "Vanessa", skills: 'JavaScript', description: 'Looking for a mentor in JavaScript' }, { name: 'Salina', skills: 'JavaScript', description: 'Learning to code' }] }
 	};
 	
 	data.getAbout = function () {
@@ -26745,6 +26753,10 @@
 		return this.contact;
 	};
 	
+	data.getUser = function () {
+		return this.users;
+	};
+	
 	exports.default = data;
 
 /***/ },
@@ -26756,7 +26768,11 @@
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
+	
+	__webpack_require__(247);
+	
 	var React = __webpack_require__(1);
+	
 	
 	var Login = React.createClass({
 		displayName: 'Login',
@@ -26764,15 +26780,31 @@
 			return React.createElement(
 				'div',
 				{ id: 'login' },
-				'Login',
 				React.createElement(
-					'form',
-					null,
-					'Email',
-					React.createElement('input', { type: 'text' }),
-					'Password',
-					React.createElement('input', { type: 'Password' }),
-					React.createElement('input', { type: 'button' })
+					'div',
+					{ className: 'container' },
+					React.createElement(
+						'div',
+						{ className: 'wrapper' },
+						React.createElement(
+							'form',
+							{ action: '', method: 'post', name: 'Login_Form', className: 'form-signin' },
+							React.createElement(
+								'h3',
+								{ className: 'form-signin-heading' },
+								'Welcome Back! Please Sign In'
+							),
+							React.createElement('hr', { className: 'colorgraph' }),
+							React.createElement('br', null),
+							React.createElement('input', { type: 'text', className: 'form-control', name: 'Username', placeholder: 'Username', required: '', autoFocus: '' }),
+							React.createElement('input', { type: 'password', className: 'form-control', name: 'Password', placeholder: 'Password', required: '' }),
+							React.createElement(
+								'button',
+								{ className: 'btn btn-lg btn-primary btn-block', name: 'Submit', value: 'Login', type: 'Submit' },
+								'Login'
+							)
+						)
+					)
 				)
 			);
 		}
@@ -26814,7 +26846,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.submit {\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -27238,18 +27270,20 @@
 	        'center',
 	        null,
 	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Contact Us:'
+	        ),
+	        _react2.default.createElement(
 	          'form',
 	          null,
 	          'Name:',
-	          _react2.default.createElement('input', { type: 'text' }),
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'Your name' }),
+	          _react2.default.createElement('br', null),
 	          'Email:',
-	          _react2.default.createElement('input', { type: 'email' }),
-	          _react2.default.createElement('input', { type: 'text' })
-	        ),
-	        _react2.default.createElement(
-	          'h6',
-	          null,
-	          'Contact Us:'
+	          _react2.default.createElement('input', { type: 'email', placeholder: 'your Email' }),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('input', { type: 'text', placeholder: 'have a comment?' })
 	        ),
 	        _react2.default.createElement(
 	          'p',
@@ -27272,6 +27306,113 @@
 	});
 	
 	exports.default = ContactUs;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(248);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(242)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./loginCSS.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./loginCSS.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(241)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".wrapper {    \n\tmargin-top: 80px;\n\tmargin-bottom: 20px;\n}\n\n.form-signin {\n  max-width: 420px;\n  padding: 30px 38px 66px;\n  margin: 0 auto;\n  background-color: #eee;\n  border: 3px dotted rgba(0,0,0,0.1);  \n  }\n\n.form-signin-heading {\n  text-align:center;\n  margin-bottom: 30px;\n}\n\n.form-control {\n  position: relative;\n  font-size: 16px;\n  height: auto;\n  padding: 10px;\n}\n\ninput[type=\"text\"] {\n  margin-bottom: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\ninput[type=\"password\"] {\n  margin-bottom: 20px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.colorgraph {\n  height: 7px;\n  border-top: 0;\n  background: #c4e17f;\n  border-radius: 5px;\n  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n}", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _mentor = __webpack_require__(235);
+	
+	var _mentor2 = _interopRequireDefault(_mentor);
+	
+	var _mentee = __webpack_require__(244);
+	
+	var _mentee2 = _interopRequireDefault(_mentee);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Register = _react2.default.createClass({
+		displayName: 'Register',
+	
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement('hr', { className: 'break' }),
+				_react2.default.createElement(
+					'h2',
+					null,
+					'Join Our Mission'
+				),
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: 'Mentor' },
+					_react2.default.createElement(
+						'button',
+						{
+							className: 'submit',
+							type: 'submit' },
+						'Mentor Application'
+					)
+				),
+				_react2.default.createElement(
+					_reactRouter.Link,
+					{ to: 'Mentee' },
+					_react2.default.createElement(
+						'button',
+						{
+							className: 'submit',
+							type: 'submit' },
+						'Mentee Application'
+					)
+				)
+			);
+		}
+	});
+	
+	exports.default = Register;
 
 /***/ }
 /******/ ]);
