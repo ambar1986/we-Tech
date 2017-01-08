@@ -27177,29 +27177,38 @@
 			return _react2.default.createElement(
 				'div',
 				{ id: 'login' },
-				'Register to get a mentor',
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Register to get a mentor'
+				),
 				_react2.default.createElement(
 					'form',
 					null,
 					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('imput', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
 					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement(
 						'p',
 						null,
 						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
 					),
+					_react2.default.createElement('input', { type: 'text' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('input', { type: 'url', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
 					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement(
-						'input',
-						{ type: 'button' },
-						'Create an account!'
-					)
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
 				)
 			);
 		}
