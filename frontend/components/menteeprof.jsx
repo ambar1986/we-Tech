@@ -14,6 +14,7 @@ var MenteeProf = React.createClass({
     return (
       <div>
       <center>
+            <h1>Mentee Profile:</h1>
             <h1>Name:</h1>
             <p>{this.state.users.mentee[0].name}</p>
             <h1>Description:</h1>

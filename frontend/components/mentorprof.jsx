@@ -15,6 +15,7 @@ var MentorProf = React.createClass({
     return (
       <div>
       <center>
+            <h1>Mentor Profile:</h1>
             <h1>Name:</h1>
             <p>{this.state.users.mentor[0].name}</p>
             <h1>Description:</h1>
@@ -22,7 +23,7 @@ var MentorProf = React.createClass({
             <h1>Skills:</h1>
             <p>{this.state.users.mentor[0].skills}</p>
             <h1>This is your match:</h1>
-            <Link to='MentorProf'>I'm your Mentee</Link>
+            <Link to='MenteeProf'>I'm your Mentee</Link>
             {this.props.children}
       </center>
       </div>
