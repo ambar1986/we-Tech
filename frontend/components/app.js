@@ -7,6 +7,8 @@ import Mentee from './mentee.jsx';
 import About from './about.jsx';
 import Login from './login.jsx';
 import ContactUs from './contact-us.jsx';
+import MenteeProf from './menteeprof.jsx';
+import MentorProf from './mentorprof.jsx';
 import '../app.css';
 import '../loginCSS.css'
 import Register from './register';

@@ -80,6 +80,14 @@
 	
 	var _contactUs2 = _interopRequireDefault(_contactUs);
 	
+	var _menteeprof = __webpack_require__(250);
+	
+	var _menteeprof2 = _interopRequireDefault(_menteeprof);
+	
+	var _mentorprof = __webpack_require__(251);
+	
+	var _mentorprof2 = _interopRequireDefault(_mentorprof);
+	
 	__webpack_require__(239);
 	
 	__webpack_require__(247);
@@ -27413,6 +27421,175 @@
 	});
 	
 	exports.default = Register;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _mentorprof = __webpack_require__(251);
+	
+	var _mentorprof2 = _interopRequireDefault(_mentorprof);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MenteeProf = _react2.default.createClass({
+	  displayName: 'MenteeProf',
+	
+	  getInitialState: function getInitialState() {
+	    return { users: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ users: _data2.default.getUser() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Name:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.users.mentee[0].name
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Description:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.user.mentee[0].description
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Skills:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.users.mentee[0].skills
+	        ),
+	        _react2.default.createElement(_reactRouter.Link, { to: _mentorprof2.default }),
+	        this.props.children
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = _mentorprof2.default;
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _menteeprof = __webpack_require__(250);
+	
+	var _menteeprof2 = _interopRequireDefault(_menteeprof);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MentorProf = _react2.default.createClass({
+	  displayName: 'MentorProf',
+	
+	  getInitialState: function getInitialState() {
+	    return { users: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ users: _data2.default.getUser() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Name:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.users.mentor[0].name
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Description:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.user.mentor[0].description
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Skills:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.users.mentor[0].skills
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Your Mentee:'
+	        ),
+	        _react2.default.createElement(_reactRouter.Link, { to: MentorProf }),
+	        this.props.children
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = MentorProf;
 
 /***/ }
 /******/ ]);
