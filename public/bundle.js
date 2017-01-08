@@ -60,15 +60,15 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _elegible = __webpack_require__(235);
+	var _elegible = __webpack_require__(234);
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
-	var _about = __webpack_require__(238);
+	var _about = __webpack_require__(236);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _login = __webpack_require__(240);
+	var _login = __webpack_require__(238);
 	
 	var _login2 = _interopRequireDefault(_login);
 	
@@ -83,7 +83,7 @@
 				_react2.default.createElement(
 					'div',
 					{ className: 'logo-class' },
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(234) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(243) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -26511,12 +26511,6 @@
 /* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
-
-/***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
@@ -26567,9 +26561,8 @@
 	exports.default = Elegible;
 
 /***/ },
-/* 236 */,
-/* 237 */,
-/* 238 */
+/* 235 */,
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26582,7 +26575,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(239);
+	var _data = __webpack_require__(237);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26623,7 +26616,7 @@
 	exports.default = About;
 
 /***/ },
-/* 239 */
+/* 237 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26644,7 +26637,7 @@
 	exports.default = data;
 
 /***/ },
-/* 240 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26674,6 +26667,16 @@
 		}
 	});
 	exports.default = Login;
+
+/***/ },
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
 
 /***/ }
 /******/ ]);
