@@ -19,7 +19,6 @@ var App = React.createClass({
 			<div>
 				
 				<center><img className="logo" src={require('../images/weTech-logo.png')} /></center>
-				
 				<nav className=" navbar-inverse">
 		          <div className="container-fluid">
 		            <div className="nav navbar-nav">
@@ -44,7 +43,10 @@ ReactDOM.render(
 		<Route path="Register" component={Register} />
 		<Route path="About" component={About} />
 		<Route path="Login" component={Login} />
+		<Route path="Mentor" component={Mentor} />
 		<Route path="Mentee" component={Mentee} />
+		<Route path="MenteeProf" component={MenteeProf} />
+		<Route path="MentorProf" component={MentorProf} />
 		<Route path="ContactUs" component={ContactUs} />
 		</Route>
 	</Router>, 
