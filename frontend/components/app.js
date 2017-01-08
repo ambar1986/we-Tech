@@ -4,6 +4,7 @@ import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 import Home from './home';
 import Elegible from './elegible';
 import About from './about.jsx';
+import Login from './login.jsx';
 
 var App = React.createClass({
 	render(){
