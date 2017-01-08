@@ -60,10 +60,6 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _elegible = __webpack_require__(235);
-	
-	var _elegible2 = _interopRequireDefault(_elegible);
-	
 	var _mentor = __webpack_require__(236);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
@@ -76,11 +72,11 @@
 	
 	var _login2 = _interopRequireDefault(_login);
 	
+	var _contactUs = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./contact-us.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+	
 	__webpack_require__(239);
-	
-	var _mentee = __webpack_require__(243);
-	
-	var _mentee2 = _interopRequireDefault(_mentee);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -111,11 +107,6 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Elegible' },
-								'Eligibility'
-							),
-							_react2.default.createElement(
-								_reactRouter.Link,
 								{ to: 'Mentor' },
 								'Sign Up'
 							),
@@ -131,8 +122,8 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'Mentee' },
-								'Mentee'
+								{ to: 'ContactUs' },
+								'Contact Us:'
 							)
 						)
 					)
@@ -149,11 +140,11 @@
 			_reactRouter.Route,
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: Mentee }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26558,7 +26549,11 @@
 			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
 			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
 		home: {
-			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.'
+			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.' },
+		contact: {
+			address: 'New York, NY',
+			phone: '1800',
+			email: '@wetech.com'
 		}
 	};
 	
@@ -26574,67 +26569,14 @@
 		return this.home;
 	};
 	
+	data.getContact = function () {
+		return this.contact;
+	};
+	
 	exports.default = data;
 
 /***/ },
-/* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(234);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Elegible = _react2.default.createClass({
-		displayName: 'Elegible',
-	
-		getInitialState: function getInitialState() {
-			return { elegible: {} };
-		},
-		componentWillMount: function componentWillMount() {
-			this.setState({ elegible: _data2.default.getElegible() });
-		},
-		render: function render() {
-			return _react2.default.createElement(
-				'center',
-				null,
-				_react2.default.createElement(
-					'div',
-					null,
-					_react2.default.createElement(
-						'h1',
-						null,
-						'Who is Elegible?'
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						this.state.elegible.mentor
-					),
-					_react2.default.createElement(
-						'p',
-						null,
-						this.state.elegible.mentee
-					)
-				)
-			);
-		}
-	});
-	
-	exports.default = Elegible;
-
-/***/ },
+/* 235 */,
 /* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26745,10 +26687,10 @@
 	  displayName: 'About',
 	
 	  getInitialState: function getInitialState() {
-	    return { about: {} };
+	    return { about: {}, elegible: {} };
 	  },
 	  componentWillMount: function componentWillMount() {
-	    this.setState({ about: _data2.default.getAbout() });
+	    this.setState({ about: _data2.default.getAbout(), elegible: _data2.default.getElegible() });
 	  },
 	
 	  render: function render() {
@@ -26767,6 +26709,21 @@
 	          'p',
 	          null,
 	          this.state.about.text
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Who is Elegible?'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentor
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.elegible.mentee
 	        )
 	      )
 	    );
@@ -27156,67 +27113,7 @@
 
 
 /***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Mentee = _react2.default.createClass({
-		displayName: 'Mentee',
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ id: 'login' },
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Register to get a mentor'
-				),
-				_react2.default.createElement(
-					'form',
-					null,
-					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
-					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
-					),
-					_react2.default.createElement('input', { type: 'text' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
-				)
-			);
-		}
-	});
-	
-	exports.default = Mentee;
-
-/***/ },
+/* 243 */,
 /* 244 */
 /***/ function(module, exports, __webpack_require__) {
 

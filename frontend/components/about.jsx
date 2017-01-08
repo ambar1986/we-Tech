@@ -3,10 +3,10 @@ import data from './data'
 
 var About = React.createClass({
 	getInitialState:function(){
-		return {about:{}}
+		return {about:{}, elegible:{}}
 	},
 	componentWillMount(){
-		this.setState({about: data.getAbout()})
+		this.setState({about: data.getAbout(), elegible: data.getElegible()})
 	},
   	render: function() {
     return (
@@ -14,6 +14,9 @@ var About = React.createClass({
       <center>
         <h1>About</h1>
         	<p>{this.state.about.text}</p>
+        <h1>Who is Elegible?</h1>
+        <p>{this.state.elegible.mentor}</p>
+        <p>{this.state.elegible.mentee}</p>
       </center>
       </div>
     )
