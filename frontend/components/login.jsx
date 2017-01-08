@@ -1,5 +1,5 @@
 var React = require('react');
-import  MenteeProf from './menteeprof'
+import  MentorProf from './mentorprof.jsx'
 import {Link} from 'react-router'
 import '../loginCSS.css'
 
@@ -19,7 +19,7 @@ var Login = React.createClass({
 							
 
 
-					 <Link to="/MenteeProf"><button className="btn btn-lg btn-primary btn-block"    >Login</button></Link>
+					 <Link to="MentorProf"><button className="btn btn-lg btn-primary btn-block"   type="submit" >Login</button></Link>
 						</form>
 						
 					</div>
