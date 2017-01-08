@@ -64,10 +64,13 @@
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
+<<<<<<< HEAD
 	var _mentor = __webpack_require__(237);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
+=======
+>>>>>>> ac2f02f081f0f9768186aaacdb089ce40c541ed1
 	var _about = __webpack_require__(238);
 	
 	var _about2 = _interopRequireDefault(_about);
@@ -14966,11 +14969,19 @@
 	
 	var _prodInvariant = __webpack_require__(35),
 	    _assign = __webpack_require__(4);
+<<<<<<< HEAD
 	
 	var ReactCompositeComponent = __webpack_require__(119);
 	var ReactEmptyComponent = __webpack_require__(125);
 	var ReactHostComponent = __webpack_require__(126);
 	
+=======
+	
+	var ReactCompositeComponent = __webpack_require__(119);
+	var ReactEmptyComponent = __webpack_require__(125);
+	var ReactHostComponent = __webpack_require__(126);
+	
+>>>>>>> ac2f02f081f0f9768186aaacdb089ce40c541ed1
 	var getNextDebugID = __webpack_require__(127);
 	var invariant = __webpack_require__(8);
 	var warning = __webpack_require__(11);
@@ -26578,6 +26589,7 @@
 
 /***/ },
 /* 236 */,
+<<<<<<< HEAD
 /* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -26665,6 +26677,9 @@
 	exports.default = Mentor;
 
 /***/ },
+=======
+/* 237 */,
+>>>>>>> ac2f02f081f0f9768186aaacdb089ce40c541ed1
 /* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
