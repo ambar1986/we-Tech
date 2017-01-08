@@ -22,17 +22,14 @@ var App = React.createClass({
 			<div>
 				
 				<center><img className="logo" src={require('../images/weTech-logo.png')} /></center>
-				<nav className=" navbar-inverse">
-		          <div className="container-fluid">
-		            <div className="nav navbar-nav">
+		            <div className="navbar">
 		              <Link to='/'>Home</Link> 
 		              <Link to='About'>About</Link>
 		              <Link to='Register'>Registration</Link>
 		              <Link to='Login'>Login</Link>
 		              <Link to='ContactUs'>Contact Us</Link>
 	            	</div>
-	          	  </div>
-	        	</nav>
+
 	        	{this.props.children}			
         	</div>
 		)
