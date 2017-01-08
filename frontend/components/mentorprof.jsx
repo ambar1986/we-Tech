@@ -18,7 +18,7 @@ var MentorProf = React.createClass({
             <h1>Name:</h1>
             <p>{this.state.users.mentor[0].name}</p>
             <h1>Description:</h1>
-            <p>{this.state.user.mentor[0].description}</p>
+            <p>{this.state.users.mentor[0].description}</p>
             <h1>Skills:</h1>
             <p>{this.state.users.mentor[0].skills}</p>
             <h1>This is your match:</h1>
