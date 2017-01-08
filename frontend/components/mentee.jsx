@@ -5,20 +5,28 @@ var Mentee = React.createClass({
 	render(){
 		return(
 			<div id='login'>
-				Register to get a mentor
+				<h1>Register to get a mentor</h1>
 				<form>
-					
 					<input type='text' placeholder='First Name'/>
-					<imput type='text' placeholder='Last Name' />
-					<imput type='email' placeholder='Email' />
+					<input type='text' placeholder='Last Name' />
+					<br/>
+					<input type='email' placeholder='Email' />
 					<input type='Password' placeholder='Password'/>
+					<br/>
 					<imput type='text' placeholder='Education' />
+					<br/>
+					<p>Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?</p>
+					<input type='text' />
+					<br/>
 					<input type='text' placeholder='Current Skills'/>
-					Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?
-					<input type='text' placeholder='Skills to Improve On/Gain'/>
-					<input type='url' placeholder='Do you have a Github?'/>
-					<input type='text' placeholder='Anything else we need to know about you'/>
-					<input type='button'>Create an account!</input>
+					<br/>
+	 				<input type='text' placeholder='Skills to Improve On/Gain'/>
+	 				<br/>
+	 				<input type='text' placeholder='Do you have a Github?'/>
+	 				<br/>
+	 				<input type='text' placeholder='Anything else we need to know about you'/>
+	 					<br/>
+	 				<input type='submit' placeholder='Create an account!'/>	
 				</form>
 			</div>
 		)
@@ -27,3 +35,5 @@ var Mentee = React.createClass({
 })
 
 export default Mentee;
+
+			
