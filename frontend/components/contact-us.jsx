@@ -1,29 +1,37 @@
 import React from 'react'
-import data from './data'
 
 var ContactUs = React.createClass({
-	getInitialState:function(){
-		return {contact:{}}
-	},
-	componentWillMount(){
-		this.setState({contact: data.getContact()})
-	},
   	render: function() {
     return (
       <div>
+      <hr className="break" />
       <center>
-              <h1>Contact Us:</h1>
+          <h2>Contact Us</h2>
+            <p>Please feel free to contact us with any comments or concerns.</p>
           <form>
-            Name:
-            <input type='text' placeholder='Your name' /><br/>
-            Email:
-            <input type='email' placeholder='your Email' /><br/>
-            <input type='text' placeholder='have a comment?'/>
+            <input 
+            type='text' 
+            placeholder='Full Name' />
+            <br/>
+
+            <input 
+            type='text' 
+            placeholder='Email' />
+            <br/>
+
+            <input 
+            className='desc'
+            type='text' 
+            placeholder='Message'/>
+
+              <br /><br />
+
+            <button
+            className="button"
+            type="submit">Submit
+            </button>
           </form>
 
-        	<p>{this.state.contact.address}</p>
-          <p>{this.state.contact.phone}</p>
-          <p>{this.state.contact.email}</p>
       </center>
       </div>
     )
