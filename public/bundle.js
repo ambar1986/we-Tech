@@ -26513,9 +26513,9 @@
 				'div',
 				null,
 				_react2.default.createElement(
-					'h2',
+					'center',
 					null,
-					'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology. '
+					_react2.default.createElement('img', { className: 'mission', src: __webpack_require__(245) })
 				)
 			);
 		}
@@ -26815,7 +26815,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 30px;\n\tpadding-bottom: 10px;\n\tmargin-left:30%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:30%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}", ""]);
 	
 	// exports
 
@@ -27185,6 +27185,12 @@
 	});
 	
 	exports.default = Mentee;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "1a7b56fa8cb53a108720ca152ccac6c4.jpg";
 
 /***/ }
 /******/ ]);

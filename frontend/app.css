@@ -6,12 +6,17 @@ a:link {
 }
 
 .nav {
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	margin-left:30%;
 	justify-content: center;
 }
 
 .logo {
 	justify-content: center;
+}
+
+.mission {
+	width: 1000px;
+	padding-top: 20px;
 }
