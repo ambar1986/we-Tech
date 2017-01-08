@@ -8,7 +8,7 @@ import About from './about.jsx';
 import Login from './login.jsx';
 import ContactUs from './contact-us.jsx';
 import '../app.css';
-
+import '../loginCSS.css'
 var App = React.createClass({
 	render(){
 		return(
@@ -16,7 +16,7 @@ var App = React.createClass({
 				
 				<center><img className="logo" src={require('../images/weTech-logo.png')} /></center>
 				
-				<nav className="navbar navbar-inverse">
+				<nav className=" navbar-inverse">
 		          <div className="container-fluid">
 		            <div className="nav navbar-nav">
 		              <Link to='/'>Home</Link> 
