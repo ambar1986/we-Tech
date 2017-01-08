@@ -1,5 +1,7 @@
-import React from 'react'
-import data from './data'
+import React from 'react';
+import data from './data';
+import {Link} from 'react-router';
+import MentorProf from './mentorprof.jsx';
 
 var MenteeProf = React.createClass({
 	getInitialState:function(){
@@ -18,6 +20,8 @@ var MenteeProf = React.createClass({
             <p>{this.state.user.mentee[0].description}</p>
             <h1>Skills:</h1>
             <p>{this.state.users.mentee[0].skills}</p>
+            <Link to={MentorProf}></Link>
+            {this.props.children}
       </center>
       </div>
     )
