@@ -21,7 +21,7 @@ var MenteeProf = React.createClass({
             <h1>Skills:</h1>
             <p>{this.state.users.mentee[0].skills}</p>
             <h1>This is your match:</h1>
-            <Link to='MentorProf'></Link>
+            <Link to='MentorProf'>I'm your mentor!</Link>
             {this.props.children}
       </center>
       </div>
