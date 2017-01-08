@@ -26783,7 +26783,7 @@
 			email: '@wetech.com' },
 		users: {
 			mentor: [{ name: 'Juan', skills: 'JavaScript', description: 'I love to code' }, { name: 'Ambar', skills: 'JavaScript', description: 'Coffee and code' }],
-			mentee: [{ name: "Vanessa", skills: 'JavaScript', description: 'Looking for a mentor in JavaScript' }, { name: 'Salina', skills: 'JavaScript', description: 'Learning to code' }] }
+			mentee: [{ name: "Vanessa", Skills: 'JavaScript, HTML, CSS', description: 'Looking for a mentor in JavaScript' }, { name: 'Salina', skills: 'JavaScript', description: 'Learning to code' }] }
 	};
 	
 	data.getAbout = function () {
@@ -26837,6 +26837,7 @@
 			return React.createElement(
 				'div',
 				{ id: 'login' },
+				React.createElement('hr', { className: 'break' }),
 				React.createElement(
 					'div',
 					{ className: 'container' },
@@ -26905,7 +26906,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.navbar {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n}\n\n.women {\n\twidth: 900px;\n\tpadding-bottom: 15px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 20%;\n\tmargin-right: 20%;\n}\n\n.mentee {\n\tmargin-left: 25px;\n}\n\n.panel-body {\n\tjustify-content: center;\n}\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\ninput[type=password] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tmargin: 3px;\n\tcursor: pointer;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\na:hover {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor:black;\n}\n\n.navbar {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n}\n\n.women {\n\twidth: 900px;\n\tpadding-bottom: 15px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 20%;\n\tmargin-right: 20%;\n}\n\n.mentee {\n\tmargin-left: 25px;\n}\n\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\ninput[type=password] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tmargin: 3px;\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -27569,7 +27570,6 @@
 	  },
 	
 	  render: function render() {
-	    console.log("working?????????????????");
 	    return _react2.default.createElement(
 	      'div',
 	      null,
@@ -27615,12 +27615,12 @@
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'Department:'
+	                    'Role:'
 	                  ),
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'Programming'
+	                    'Mentee'
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -27629,12 +27629,12 @@
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'Description'
+	                    'Description:'
 	                  ),
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    this.state.users.mentee[0].description
+	                    'Hi, I am a self-taught coder. I\'ve been learning through Codecademy and FreeCodeCamp. I am hoping to improve on my JavaScript and learn React/Redux.'
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -27643,12 +27643,12 @@
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'skills'
+	                    'Skills:'
 	                  ),
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    this.state.users.mentee[0].skills
+	                    'JavaScript, HTML, CSS'
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -27657,12 +27657,12 @@
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'Home Address'
+	                    'Education:'
 	                  ),
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'New York, New York'
+	                    'BS in Fine Arts from NYU'
 	                  )
 	                ),
 	                _react2.default.createElement(
@@ -27671,16 +27671,26 @@
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    'Email'
+	                    'Availability:'
 	                  ),
 	                  _react2.default.createElement(
 	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      _reactRouter.Link,
-	                      { to: 'Homefo@support.com' },
-	                      'sam@gmail.com'
-	                    )
+	                    '2 Hrs/Week/In Person'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Contact:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'sam@gmail.com'
 	                  )
 	                )
 	              )

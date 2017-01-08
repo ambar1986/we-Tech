@@ -11,7 +11,7 @@ let data = {
 		email:'@wetech.com'},
 	users:{ 
 		mentor:[{name:'Juan', skills:'JavaScript', description:'I love to code'},{name: 'Ambar', skills:'JavaScript', description: 'Coffee and code'}],
-		mentee:[{name:"Vanessa", skills:'JavaScript', description:'Looking for a mentor in JavaScript'},{name:'Salina', skills:'JavaScript', description:'Learning to code'}]}
+		mentee:[{name:"Vanessa", Skills:'JavaScript, HTML, CSS', description:'Looking for a mentor in JavaScript'},{name:'Salina', skills:'JavaScript', description:'Learning to code'}]}
 }
 
 data.getAbout = function() {

@@ -12,7 +12,6 @@ var MenteeProf = React.createClass({
 		this.setState({users: data.getUser()})
 	},
   	render: function() {
-      console.log("working?????????????????")
     return (
       <div>
       <hr className='break' />
@@ -30,24 +29,28 @@ var MenteeProf = React.createClass({
                           <table className="table table-user-information">
                           <tbody>
                               <tr>
-                                <td>Department:</td>
-                                <td>Programming</td>
+                                <td>Role:</td>
+                               <td>Mentee</td>  
                               </tr>
                               <tr>
-                                <td>Description</td>
-                                <td>{this.state.users.mentee[0].description}</td>
+                                <td>Description:</td>
+                                <td>Hi, I am a self-taught coder. I've been learning through Codecademy and FreeCodeCamp. I am hoping to improve on my JavaScript and learn React/Redux.</td>
                               </tr>
                               <tr>
-                                <td>skills</td>
-                                <td>{this.state.users.mentee[0].skills}</td>
+                                <td>Skills:</td>
+                                <td>JavaScript, HTML, CSS</td>
                               </tr>
                               <tr>
-                                <td>Home Address</td>
-                                <td>New York, New York</td>
+                                <td>Education:</td>
+                                <td>BS in Fine Arts from NYU</td>
+                              </tr>
+                               <tr>
+                                <td>Availability:</td>
+                                <td>2 Hrs/Week/In Person</td>
                               </tr>
                               <tr>
-                                <td>Email</td>
-                                <td><Link to="Homefo@support.com">sam@gmail.com</Link></td>
+                                <td>Contact:</td>
+                                <td>sam@gmail.com</td>
                               </tr>
 
                             </tbody>

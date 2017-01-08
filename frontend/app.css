@@ -5,6 +5,16 @@ a:link {
 	color: black;
 }
 
+a:hover {
+	text-decoration: underline;
+	color: #e8595e;
+}
+
+a:active {
+	text-decoration: underline;
+	color:black;
+}
+
 .navbar {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -41,9 +51,6 @@ a:link {
 	margin-left: 25px;
 }
 
-.panel-body {
-	justify-content: center;
-}
 
 /*.input {
 	border: none;
