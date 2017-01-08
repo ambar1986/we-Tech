@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './data'
 
-var MentorProf = React.createClass({
+var MenteeProf = React.createClass({
 	getInitialState:function(){
 		return {users:{}}
 	},
@@ -13,9 +13,9 @@ var MentorProf = React.createClass({
       <div>
       <center>
             <h1>Name:</h1>
-            <p>{this.state.users.mentor[0].name}</p>
+            <p>{this.state.users.mentee[0].name}</p>
             <h1>Skills:</h1>
-            <p>{this.state.users.mentor[0].skills}</p>
+            <p>{this.state.users.mentee[0].skills}</p>
       </center>
       </div>
     )
