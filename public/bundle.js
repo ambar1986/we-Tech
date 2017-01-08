@@ -60,27 +60,27 @@
 	
 	var _home2 = _interopRequireDefault(_home);
 	
-	var _mentor = __webpack_require__(236);
+	var _mentor = __webpack_require__(235);
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
-	var _mentee = __webpack_require__(237);
+	var _mentee = __webpack_require__(244);
 	
 	var _mentee2 = _interopRequireDefault(_mentee);
 	
-	var _about = __webpack_require__(238);
+	var _about = __webpack_require__(236);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _login = __webpack_require__(239);
+	var _login = __webpack_require__(238);
 	
 	var _login2 = _interopRequireDefault(_login);
 	
-	var _contactUs = __webpack_require__(240);
+	var _contactUs = __webpack_require__(246);
 	
 	var _contactUs2 = _interopRequireDefault(_contactUs);
 	
-	__webpack_require__(241);
+	__webpack_require__(239);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -93,7 +93,7 @@
 				_react2.default.createElement(
 					'center',
 					null,
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(245) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(243) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -26498,7 +26498,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(234);
+	var _data = __webpack_require__(237);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -26514,7 +26514,7 @@
 				_react2.default.createElement(
 					'center',
 					null,
-					_react2.default.createElement('img', { className: 'mission', src: __webpack_require__(235) })
+					_react2.default.createElement('img', { className: 'mission', src: __webpack_require__(245) })
 				)
 			);
 		}
@@ -26523,54 +26523,8 @@
 	exports.default = Home;
 
 /***/ },
-/* 234 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	var data = {
-		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
-		elegible: {
-			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
-			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
-		home: {
-			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.' },
-		contact: {
-			address: 'New York, NY',
-			phone: '1800',
-			email: '@wetech.com'
-		}
-	};
-	
-	data.getAbout = function () {
-		return this.about;
-	};
-	
-	data.getElegible = function () {
-		return this.elegible;
-	};
-	
-	data.getHome = function () {
-		return this.home;
-	};
-	
-	data.getContact = function () {
-		return this.contact;
-	};
-	
-	exports.default = data;
-
-/***/ },
+/* 234 */,
 /* 235 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "1a7b56fa8cb53a108720ca152ccac6c4.jpg";
-
-/***/ },
-/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -26657,71 +26611,10 @@
 	exports.default = Mentor;
 
 /***/ },
-/* 237 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Mentee = _react2.default.createClass({
-		displayName: 'Mentee',
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ id: 'login' },
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Register to get a mentor'
-				),
-				_react2.default.createElement(
-					'form',
-					null,
-					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
-					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
-					),
-					_react2.default.createElement('input', { type: 'text' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
-				)
-			);
-		}
-	});
-	
-	exports.default = Mentee;
-
-/***/ },
-/* 238 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -26731,53 +26624,80 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(234);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var About = _react2.default.createClass({
-	  displayName: 'About',
-	
-	  getInitialState: function getInitialState() {
-	    return { about: {}, elegible: {} };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    this.setState({ about: _data2.default.getAbout(), elegible: _data2.default.getElegible() });
-	  },
+	  displayName: "About",
 	
 	  render: function render() {
 	    return _react2.default.createElement(
-	      'div',
+	      "div",
 	      null,
+	      _react2.default.createElement("hr", { className: "break" }),
 	      _react2.default.createElement(
-	        'center',
-	        null,
+	        "div",
+	        { className: "about" },
 	        _react2.default.createElement(
-	          'h1',
+	          "h2",
 	          null,
-	          'About'
+	          "What is WeTech?"
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
-	          this.state.about.text
+	          "WeTech is a mentorship program that matches women pursuing a career in technology with a mentor who is currently working in the industry and can provide guidance and advice."
 	        ),
 	        _react2.default.createElement(
-	          'h1',
+	          "h2",
 	          null,
-	          'Who is Elegible?'
+	          "Why do we do this?"
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
-	          this.state.elegible.mentor
+	          "By 2020, 1.4 million jobs will open in computer science. Yet, according to a recent article from TechCrunch, only 29% of graduates will be qualified to fill those positions - and less than 3% will be filled by women. This is a serious domestic issue that we are hoping to tackle."
 	        ),
 	        _react2.default.createElement(
-	          'p',
+	          "p",
 	          null,
-	          this.state.elegible.mentee
+	          "Since the 1980s, women in computer science have dropped from 37% to less than 18% today. Studies have shown that aptitude isn't the problem, it's the culture. The male-dominated field and the lack of female role models have made the industry unappealing to women."
+	        ),
+	        _react2.default.createElement("br", null),
+	        _react2.default.createElement("img", { className: "graph", src: "http://i.huffpost.com/gen/2772382/original.jpg" }),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "How does WeTech work to promote changes?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Accepted mentees will be matched with a mentor that has the skills the mentee is hoping to improve on. Both mentors and mentees are committed to meeting weekly to discuss and advise on projects and address any issues."
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          null,
+	          "Who is eligible?"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Currently, the mentorship is only available to those living in New York City."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "Both potential mentors and mentees must fill out an application on the Sign Up page. WeTech will match candidates together based on skillsets and preferences."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "In order to be a mentor, you should be working professionally in the tech industry. You do not have to be female to apply."
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          null,
+	          "To be a mentee, you must be a female, 18 years or older, who is interested in learning to code. Ideally, you are currently a programming student. You also agree to our pay-it-forward initiative, where upon securing a technology position, you will return as a mentor."
 	        )
 	      )
 	    );
@@ -26787,7 +26707,48 @@
 	exports.default = About;
 
 /***/ },
-/* 239 */
+/* 237 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var data = {
+		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
+		elegible: {
+			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
+			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' },
+		home: {
+			mission: 'WeTech hopes to bridge the gender and diversity gap in the tech community by offering a mentorship program for women in technology.' },
+		contact: {
+			address: 'New York, NY',
+			phone: '1800',
+			email: '@wetech.com'
+		}
+	};
+	
+	data.getAbout = function () {
+		return this.about;
+	};
+	
+	data.getElegible = function () {
+		return this.elegible;
+	};
+	
+	data.getHome = function () {
+		return this.home;
+	};
+	
+	data.getContact = function () {
+		return this.contact;
+	};
+	
+	exports.default = data;
+
+/***/ },
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26819,80 +26780,16 @@
 	exports.default = Login;
 
 /***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(234);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var ContactUs = _react2.default.createClass({
-	  displayName: 'ContactUs',
-	
-	  getInitialState: function getInitialState() {
-	    return { contact: {} };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    this.setState({ contact: _data2.default.getContact() });
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'center',
-	        null,
-	        _react2.default.createElement(
-	          'h6',
-	          null,
-	          'Contact Us:'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.address
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.phone
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.email
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = ContactUs;
-
-/***/ },
-/* 241 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(242);
+	var content = __webpack_require__(240);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(244)(content, {});
+	var update = __webpack_require__(242)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26909,21 +26806,21 @@
 	}
 
 /***/ },
-/* 242 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(243)();
+	exports = module.exports = __webpack_require__(241)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:30%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 243 */
+/* 241 */
 /***/ function(module, exports) {
 
 	/*
@@ -26979,7 +26876,7 @@
 
 
 /***/ },
-/* 244 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27231,10 +27128,150 @@
 
 
 /***/ },
-/* 245 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentee = _react2.default.createClass({
+		displayName: 'Mentee',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ id: 'login' },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Register to get a mentor'
+				),
+				_react2.default.createElement(
+					'form',
+					null,
+					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
+					),
+					_react2.default.createElement('input', { type: 'text' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentee;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "1a7b56fa8cb53a108720ca152ccac6c4.jpg";
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContactUs = _react2.default.createClass({
+	  displayName: 'ContactUs',
+	
+	  getInitialState: function getInitialState() {
+	    return { contact: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ contact: _data2.default.getContact() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'form',
+	          null,
+	          'Name:',
+	          _react2.default.createElement('input', { type: 'text' }),
+	          'Email:',
+	          _react2.default.createElement('input', { type: 'email' }),
+	          _react2.default.createElement('input', { type: 'text' })
+	        ),
+	        _react2.default.createElement(
+	          'h6',
+	          null,
+	          'Contact Us:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.address
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.phone
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.email
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ContactUs;
 
 /***/ }
 /******/ ]);
