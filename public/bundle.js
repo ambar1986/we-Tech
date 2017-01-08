@@ -64,6 +64,7 @@
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
+<<<<<<< HEAD
 	var _mentee = __webpack_require__(242);
 	
 	var _mentee2 = _interopRequireDefault(_mentee);
@@ -81,6 +82,54 @@
 	var _contactUs2 = _interopRequireDefault(_contactUs);
 	
 	__webpack_require__(246);
+=======
+<<<<<<< HEAD
+	var _mentee = __webpack_require__(236);
+	
+	var _mentee2 = _interopRequireDefault(_mentee);
+	
+	var _about = __webpack_require__(237);
+=======
+	var _mentee = __webpack_require__(244);
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+	
+	var _mentee2 = _interopRequireDefault(_mentee);
+	
+<<<<<<< HEAD
+	var _about = __webpack_require__(237);
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
+=======
+	var _about = __webpack_require__(236);
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+>>>>>>> 454cf4bf5ceb77777fdab7b3de28d8c3b96a5604
+	
+	var _about2 = _interopRequireDefault(_about);
+	
+	var _login = __webpack_require__(238);
+	
+	var _login2 = _interopRequireDefault(_login);
+	
+	var _contactUs = __webpack_require__(239);
+	
+	var _contactUs2 = _interopRequireDefault(_contactUs);
+<<<<<<< HEAD
+=======
+	__webpack_require__(245);
+	
+	var _mentee = __webpack_require__(249);
+<<<<<<< HEAD
+=======
+=======
+	var _mentee = __webpack_require__(243);
+>>>>>>> c06fc4bab7937758e65cfe74262b497155bab5a6
+>>>>>>> 1e6674a301792a66174e7d0548cbb2a2f9c35c85
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
+=======
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+	
+	__webpack_require__(240);
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -93,7 +142,19 @@
 				_react2.default.createElement(
 					'center',
 					null,
+<<<<<<< HEAD
 					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(250) })
+=======
+<<<<<<< HEAD
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(244) })
+=======
+<<<<<<< HEAD
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(250) })
+=======
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(242) })
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+>>>>>>> 454cf4bf5ceb77777fdab7b3de28d8c3b96a5604
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 				),
 				_react2.default.createElement(
 					'nav',
@@ -27113,6 +27174,67 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentee = _react2.default.createClass({
+		displayName: 'Mentee',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ id: 'login' },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Register to get a mentor'
+				),
+				_react2.default.createElement(
+					'form',
+					null,
+					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
+					),
+					_react2.default.createElement('input', { type: 'text' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentee;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
@@ -27176,7 +27298,19 @@
 	exports.default = About;
 
 /***/ },
+<<<<<<< HEAD
 /* 244 */
+=======
+<<<<<<< HEAD
+/* 238 */
+=======
+<<<<<<< HEAD
+/* 244 */
+=======
+/* 237 */
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+>>>>>>> 454cf4bf5ceb77777fdab7b3de28d8c3b96a5604
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27208,7 +27342,11 @@
 	exports.default = Login;
 
 /***/ },
+<<<<<<< HEAD
 /* 245 */
+=======
+/* 239 */
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27221,7 +27359,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+<<<<<<< HEAD
 	var _data = __webpack_require__(240);
+=======
+	var _data = __webpack_require__(234);
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -27245,7 +27387,11 @@
 	        'center',
 	        null,
 	        _react2.default.createElement(
+<<<<<<< HEAD
 	          'h6',
+=======
+	          'h1',
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 	          null,
 	          'Contact Us:'
 	        ),
@@ -27272,16 +27418,27 @@
 	exports.default = ContactUs;
 
 /***/ },
+<<<<<<< HEAD
 /* 246 */
+=======
+/* 240 */
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
+<<<<<<< HEAD
 	var content = __webpack_require__(247);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(249)(content, {});
+=======
+	var content = __webpack_require__(241);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(243)(content, {});
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -27298,10 +27455,17 @@
 	}
 
 /***/ },
+<<<<<<< HEAD
 /* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(248)();
+=======
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(242)();
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 	// imports
 	
 	
@@ -27312,7 +27476,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 248 */
+=======
+/* 242 */
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /***/ function(module, exports) {
 
 	/*
@@ -27368,7 +27536,11 @@
 
 
 /***/ },
+<<<<<<< HEAD
 /* 249 */
+=======
+/* 243 */
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27620,6 +27792,100 @@
 
 
 /***/ },
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* 243 */,
+=======
+<<<<<<< HEAD
+>>>>>>> d737af90e5b52c5694f24f96c2a822971a222ced
+/* 249 */
+=======
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+/***/ },
+/* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(234);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContactUs = _react2.default.createClass({
+	  displayName: 'ContactUs',
+	
+	  getInitialState: function getInitialState() {
+	    return { contact: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ contact: _data2.default.getContact() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Contact Us:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.address
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.phone
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.email
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ContactUs;
+
+/***/ },
+>>>>>>> 454cf4bf5ceb77777fdab7b3de28d8c3b96a5604
+/* 244 */
+>>>>>>> e81e84c00b4a66d392bd7f5a4c654b5ca5412feb
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+<<<<<<< HEAD
+/***/ },
+>>>>>>> a3be442905696b8e7792eb83ab423c5486227d7b
 /* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
