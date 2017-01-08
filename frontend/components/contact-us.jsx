@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router';
+import ContactMessage from './contactMessage';
 
 var ContactUs = React.createClass({
   	render: function() {
@@ -26,10 +28,10 @@ var ContactUs = React.createClass({
 
               <br /><br />
 
-            <button
-            className="button"
-            type="submit">Submit
-            </button>
+            <Link to='ContactMessage'><button
+              className="button"
+              type="submit">Submit
+              </button></Link>
           </form>
 
       </center>
