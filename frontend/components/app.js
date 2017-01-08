@@ -6,16 +6,16 @@ import Elegible from './elegible';
 import Mentor from './mentor';
 import About from './about.jsx';
 import Login from './login.jsx';
-import Mentee from './login.jsx'
+import Mentee from './login.jsx';
+import '../app.css';
 
 var App = React.createClass({
 	render(){
 		return(
 			<div>
-				<div className="logo-class">
-					<img className="logo" src={require('../images/weTech-logo.png')} />
-				</div>
-
+				
+				<center><img className="logo" src={require('../images/weTech-logo.png')} /></center>
+				
 				<nav className="navbar navbar-inverse">
 		          <div className="container-fluid">
 		            <div className="nav navbar-nav">
