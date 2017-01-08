@@ -19,7 +19,7 @@ var MenteeProf = React.createClass({
 
               
                       <h2 className="mentee">Samantha Thomas</h2>
-                    
+                  
                     <div className="panel-body">
                       <div className="row">
                        <center> 
@@ -49,8 +49,7 @@ var MenteeProf = React.createClass({
                                 <td>Email</td>
                                 <td><Link to="Homefo@support.com">sam@gmail.com</Link></td>
                               </tr>
-                              
-                             
+
                             </tbody>
                           </table>
                   
@@ -62,20 +61,11 @@ var MenteeProf = React.createClass({
                         </div>
                       </div>
                     </div>
-                              
-            
-
-
-
+                      
+ 
+      
 
  {this.props.children}
-
-
-
-
-
-
-
       </div>
     )
   }

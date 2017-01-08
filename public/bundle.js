@@ -56,7 +56,9 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(253);
+	var _jquery = __webpack_require__(253);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
 	
 	var _home = __webpack_require__(233);
 	
@@ -101,6 +103,10 @@
 	var _thankMessage = __webpack_require__(252);
 	
 	var _thankMessage2 = _interopRequireDefault(_thankMessage);
+	
+	var _contactMessage = __webpack_require__(254);
+	
+	var _contactMessage2 = _interopRequireDefault(_contactMessage);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -164,7 +170,8 @@
 			_react2.default.createElement(_reactRouter.Route, { path: 'MenteeProf', component: _menteeprof2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'MentorProf', component: _mentorprof2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'ContactUs', component: _contactUs2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'ThankMessage', component: _thankMessage2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'ThankMessage', component: _thankMessage2.default }),
+			_react2.default.createElement(_reactRouter.Route, { path: 'ContactMessage', component: _contactMessage2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26830,7 +26837,6 @@
 			return React.createElement(
 				'div',
 				{ id: 'login' },
-				React.createElement('hr', { className: 'break' }),
 				React.createElement(
 					'div',
 					{ className: 'container' },
@@ -26845,10 +26851,8 @@
 								{ className: 'form-signin-heading' },
 								'Welcome Back! Please Sign In'
 							),
-							React.createElement('hr', { className: 'colorgraph' }),
-							React.createElement('br', null),
-							React.createElement('input', { type: 'text', className: 'form-control', name: 'Username', placeholder: 'Username', required: '', autoFocus: '' }),
-							React.createElement('input', { type: 'password', className: 'form-control', name: 'Password', placeholder: 'Password', required: '' }),
+							React.createElement('input', { type: 'text', className: 'form-control', name: 'Username', placeholder: 'Username' }),
+							React.createElement('input', { type: 'text', className: 'form-control', name: 'Password', placeholder: 'Password' }),
 							React.createElement(
 								_reactRouter.Link,
 								{ to: 'MenteeProf' },
@@ -27338,6 +27342,12 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(178);
+	
+	var _contactMessage = __webpack_require__(254);
+	
+	var _contactMessage2 = _interopRequireDefault(_contactMessage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var ContactUs = _react2.default.createClass({
@@ -27379,11 +27389,15 @@
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement('br', null),
 	          _react2.default.createElement(
-	            'button',
-	            {
-	              className: 'button',
-	              type: 'submit' },
-	            'Submit'
+	            _reactRouter.Link,
+	            { to: 'ContactMessage' },
+	            _react2.default.createElement(
+	              'button',
+	              {
+	                className: 'button',
+	                type: 'submit' },
+	              'Submit'
+	            )
 	          )
 	        )
 	      )
@@ -27428,7 +27442,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".wrapper {    \n\tmargin-bottom: 20px;\n}\n\n.form-signin {\n  max-width: 420px;\n  padding: 30px 38px 66px;\n  margin: 0 auto;\n  border: 3px dotted rgba(0,0,0,0.1);  \n  }\n\n.form-signin-heading {\n  text-align:center;\n  margin-bottom: 30px;\n}\n\n.form-control {\n  position: relative;\n  font-size: 16px;\n  height: auto;\n  padding: 10px;\n}\n\ninput[type=\"text\"] {\n  margin-bottom: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\ninput[type=\"password\"] {\n  margin-bottom: 20px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.colorgraph {\n  height: 7px;\n  border-top: 0;\n  background: #c4e17f;\n  border-radius: 5px;\n  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n}", ""]);
+	exports.push([module.id, ".wrapper {    \n\tmargin-bottom: 20px;\n}\n\n.form-signin {\n  max-width: 420px;\n  padding: 30px 38px 66px;\n  margin: 0 auto; \n  }\n\n.form-signin-heading {\n  text-align:center;\n  margin-bottom: 30px;\n}\n\n.form-control {\n  position: relative;\n  font-size: 16px;\n  height: auto;\n  padding: 10px;\n}\n\n/*input[type=\"text\"] {\n  margin-bottom: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}*/\n\n/*input[type=\"password\"] {\n  margin-bottom: 20px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}*/\n\n.colorgraph {\n  height: 7px;\n  border-top: 0;\n  background: #c4e17f;\n  border-radius: 5px;\n  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n}", ""]);
 	
 	// exports
 
@@ -38061,6 +38075,50 @@
 	return jQuery;
 	} );
 
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContactMessage = _react2.default.createClass({
+	  displayName: 'ContactMessage',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement('hr', { className: 'break' }),
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h2',
+	          null,
+	          'Thank you for your contacting us!'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We will get back to you shortly.'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ContactMessage;
 
 /***/ }
 /******/ ]);
