@@ -19,7 +19,8 @@ var App = React.createClass({
 		              <Link to='/'>Home</Link> 
 		              <Link to='Elegible'>Eligibility</Link>
 		              <Link to='About'>About</Link>
-		              <Link to='#'>Sign Up</Link>
+		              <Link to='Login'>Login</Link>
+		              <Link to='Mentee'>Mentee</Link>
 	            	</div>
 	          	  </div>
 	        	</nav>
@@ -35,6 +36,8 @@ ReactDOM.render(
 		<IndexRoute component={Home} />
 		<Route path="Elegible" component={Elegible} />
 		<Route path="About" component={About} />
+		<Route path="Login" component={Login} />
+		<Route path="Register" component={Mentee} />
 		</Route>
 	</Router>, 
 	document.getElementById('root'))
