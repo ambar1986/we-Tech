@@ -26848,7 +26848,7 @@
 						{ className: 'wrapper' },
 						React.createElement(
 							'form',
-							{ action: '', method: 'post', name: 'Login_Form', className: 'form-signin' },
+							{ name: 'Login_Form', className: 'form-signin' },
 							React.createElement(
 								'h3',
 								{ className: 'form-signin-heading' },
@@ -26859,9 +26859,13 @@
 							React.createElement('input', { type: 'text', className: 'form-control', name: 'Username', placeholder: 'Username', required: '', autoFocus: '' }),
 							React.createElement('input', { type: 'password', className: 'form-control', name: 'Password', placeholder: 'Password', required: '' }),
 							React.createElement(
-								'button',
-								{ className: 'btn btn-lg btn-primary btn-block', name: 'Submit', value: 'Login', type: 'Submit' },
-								'Login'
+								_reactRouter.Link,
+								{ to: 'MenteeProf' },
+								React.createElement(
+									'button',
+									{ className: 'button' },
+									'Login'
+								)
 							)
 						)
 					)
@@ -26906,7 +26910,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 25%;\n\tmargin-right: 25%;\n}\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\n.nav {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n\tpadding-top: 20px;\n}\n\n.women {\n\twidth: 900px;\n\tpadding-bottom: 15px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 20%;\n\tmargin-right: 20%;\n}\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tmargin: 3px;\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -27343,59 +27347,53 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _data = __webpack_require__(237);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var ContactUs = _react2.default.createClass({
 	  displayName: 'ContactUs',
 	
-	  getInitialState: function getInitialState() {
-	    return { contact: {} };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    this.setState({ contact: _data2.default.getContact() });
-	  },
-	
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement('hr', { className: 'break' }),
 	      _react2.default.createElement(
 	        'center',
 	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'h2',
 	          null,
-	          'Contact Us:'
+	          'Contact Us'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Please feel free to contact us with any comments or concerns.'
 	        ),
 	        _react2.default.createElement(
 	          'form',
 	          null,
-	          'Name:',
-	          _react2.default.createElement('input', { type: 'text', placeholder: 'Your name' }),
+	          _react2.default.createElement('input', {
+	            type: 'text',
+	            placeholder: 'Full Name' }),
 	          _react2.default.createElement('br', null),
-	          'Email:',
-	          _react2.default.createElement('input', { type: 'email', placeholder: 'your Email' }),
+	          _react2.default.createElement('input', {
+	            type: 'text',
+	            placeholder: 'Email' }),
 	          _react2.default.createElement('br', null),
-	          _react2.default.createElement('input', { type: 'text', placeholder: 'have a comment?' })
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.address
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.phone
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.email
+	          _react2.default.createElement('input', {
+	            className: 'desc',
+	            type: 'text',
+	            placeholder: 'Message' }),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement('br', null),
+	          _react2.default.createElement(
+	            'button',
+	            {
+	              className: 'button',
+	              type: 'submit' },
+	            'Submit'
+	          )
 	        )
 	      )
 	    );
@@ -27439,7 +27437,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".wrapper {    \n\tmargin-top: 80px;\n\tmargin-bottom: 20px;\n}\n\n.form-signin {\n  max-width: 420px;\n  padding: 30px 38px 66px;\n  margin: 0 auto;\n  background-color: #eee;\n  border: 3px dotted rgba(0,0,0,0.1);  \n  }\n\n.form-signin-heading {\n  text-align:center;\n  margin-bottom: 30px;\n}\n\n.form-control {\n  position: relative;\n  font-size: 16px;\n  height: auto;\n  padding: 10px;\n}\n\ninput[type=\"text\"] {\n  margin-bottom: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\ninput[type=\"password\"] {\n  margin-bottom: 20px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.colorgraph {\n  height: 7px;\n  border-top: 0;\n  background: #c4e17f;\n  border-radius: 5px;\n  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n}", ""]);
+	exports.push([module.id, ".wrapper {    \n\tmargin-top: 80px;\n\tmargin-bottom: 20px;\n}\n\n.form-signin {\n  max-width: 420px;\n  padding: 30px 38px 66px;\n  margin: 0 auto;\n  border: 3px dotted rgba(0,0,0,0.1);  \n  }\n\n.form-signin-heading {\n  text-align:center;\n  margin-bottom: 30px;\n}\n\n.form-control {\n  position: relative;\n  font-size: 16px;\n  height: auto;\n  padding: 10px;\n}\n\ninput[type=\"text\"] {\n  margin-bottom: 0px;\n  border-bottom-left-radius: 0;\n  border-bottom-right-radius: 0;\n}\n\ninput[type=\"password\"] {\n  margin-bottom: 20px;\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n.colorgraph {\n  height: 7px;\n  border-top: 0;\n  background: #c4e17f;\n  border-radius: 5px;\n  background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);\n}", ""]);
 	
 	// exports
 
@@ -27478,37 +27476,47 @@
 				'div',
 				null,
 				_react2.default.createElement('hr', { className: 'break' }),
+				_react2.default.createElement('br', null),
 				_react2.default.createElement(
 					'center',
 					null,
 					_react2.default.createElement(
-						'h2',
-						null,
-						'Join Our Mission'
-					),
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: 'Mentor' },
+						'div',
+						{ className: 'join' },
 						_react2.default.createElement(
-							'button',
-							{
-								className: 'button',
-								type: 'submit' },
-							'Mentor Application'
-						)
-					),
-					_react2.default.createElement(
-						_reactRouter.Link,
-						{ to: 'Mentee' },
+							_reactRouter.Link,
+							{ to: 'Mentor' },
+							_react2.default.createElement(
+								'button',
+								{
+									className: 'button',
+									type: 'submit' },
+								'Mentor Application'
+							)
+						),
 						_react2.default.createElement(
-							'button',
-							{
-								className: 'button',
-								type: 'submit' },
-							'Mentee Application'
+							_reactRouter.Link,
+							{ to: 'Mentee' },
+							_react2.default.createElement(
+								'button',
+								{
+									className: 'button',
+									type: 'submit' },
+								'Mentee Application'
+							)
+						),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement('br', null),
+						_react2.default.createElement(
+							'a',
+							{ href: 'http://www.elle.com/culture/tech/a35725/women-in-tech-2016/', target: '_blank' },
+							_react2.default.createElement('img', { className: 'women', src: 'http://ell.h-cdn.co/assets/16/19/1600x900/hd-aspect-1463178132-elle-womenintech-header.jpg' })
 						)
 					)
-				)
+				),
+				_react2.default.createElement('br', null),
+				' ',
+				_react2.default.createElement('br', null)
 			);
 		}
 	});
@@ -27561,6 +27569,11 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
+	          'Mentee Profile:'
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
 	          'Name:'
 	        ),
 	        _react2.default.createElement(
@@ -27576,7 +27589,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          this.state.user.mentee[0].description
+	          this.state.users.mentee[0].description
 	        ),
 	        _react2.default.createElement(
 	          'h1',
@@ -27588,7 +27601,16 @@
 	          null,
 	          this.state.users.mentee[0].skills
 	        ),
-	        _react2.default.createElement(_reactRouter.Link, { to: _mentorprof2.default }),
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'This is your match:'
+	        ),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'MentorProf' },
+	          'I\'m your mentor!'
+	        ),
 	        this.props.children
 	      )
 	    );
@@ -27634,12 +27656,18 @@
 	  },
 	
 	  render: function render() {
+	    console.log("mentorprof");
 	    return _react2.default.createElement(
 	      'div',
 	      null,
 	      _react2.default.createElement(
 	        'center',
 	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Mentor Profile:'
+	        ),
 	        _react2.default.createElement(
 	          'h1',
 	          null,
@@ -27658,7 +27686,7 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          this.state.user.mentor[0].description
+	          this.state.users.mentor[0].description
 	        ),
 	        _react2.default.createElement(
 	          'h1',
@@ -27673,9 +27701,13 @@
 	        _react2.default.createElement(
 	          'h1',
 	          null,
-	          'Your Mentee:'
+	          'This is your match:'
 	        ),
-	        _react2.default.createElement(_reactRouter.Link, { to: MentorProf }),
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: 'MenteeProf' },
+	          'I\'m your Mentee'
+	        ),
 	        this.props.children
 	      )
 	    );

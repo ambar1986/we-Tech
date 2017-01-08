@@ -16,7 +16,7 @@ var Login = React.createClass({
 							  
 							  <input type="text" className="form-control" name="Username" placeholder="Username" required="" autoFocus="" />
 							  <input type="password" className="form-control" name="Password" placeholder="Password" required=""/>     		  
-					 		  <Link to="MenteeProf"><button className="btn btn-lg btn-primary btn-block"   >Login</button></Link>
+					 		  <Link to="MenteeProf"><button className="button">Login</button></Link>
 						</form>
 						
 					</div>
