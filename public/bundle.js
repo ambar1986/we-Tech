@@ -64,6 +64,10 @@
 	
 	var _elegible2 = _interopRequireDefault(_elegible);
 	
+	var _mentor = __webpack_require__(237);
+	
+	var _mentor2 = _interopRequireDefault(_mentor);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -98,12 +102,7 @@
 							),
 							_react2.default.createElement(
 								_reactRouter.Link,
-								{ to: 'About' },
-								'About'
-							),
-							_react2.default.createElement(
-								_reactRouter.Link,
-								{ to: '#' },
+								{ to: 'Mentor' },
 								'Sign Up'
 							)
 						)
@@ -122,7 +121,7 @@
 			{ path: '/', component: App },
 			_react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Elegible', component: _elegible2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: About })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default })
 		)
 	), document.getElementById('root'));
 
@@ -26550,6 +26549,94 @@
 	});
 	
 	exports.default = Elegible;
+
+/***/ },
+/* 236 */,
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentor = _react2.default.createClass({
+		displayName: "Mentor",
+	
+		render: function render() {
+			return _react2.default.createElement(
+				"div",
+				null,
+				_react2.default.createElement(
+					"h2",
+					{ className: "title" },
+					"Sign Up to be a Mentor"
+				),
+				_react2.default.createElement(
+					"form",
+					null,
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "First Name"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Last Name"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Email"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Description"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Skills"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Education"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "GitHub Link"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "LinkedIn Link"
+					}),
+					_react2.default.createElement("input", {
+						className: "input",
+						type: "text",
+						placeholder: "Personal Site"
+					}),
+					_react2.default.createElement("input", {
+						className: "submit",
+						type: "submit"
+					})
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentor;
 
 /***/ }
 /******/ ]);
