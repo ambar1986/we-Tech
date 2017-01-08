@@ -39,7 +39,7 @@ ReactDOM.render(
 		<Route path="Elegible" component={Elegible} />
 		<Route path="About" component={About} />
 		<Route path="Login" component={Login} />
-		<Route path="Register" component={Mentee} />
+		<Route path="Mentee" component={Mentee} />
 		</Route>
 	</Router>, 
 	document.getElementById('root'))
