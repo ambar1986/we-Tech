@@ -5,6 +5,7 @@ import Home from './home';
 import Elegible from './elegible';
 import About from './about.jsx';
 import Login from './login.jsx';
+import Mentee from './mentee.jsx';
 
 var App = React.createClass({
 	render(){
