@@ -26533,38 +26533,43 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _data = __webpack_require__(237);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Elegible = _react2.default.createClass({
 		displayName: 'Elegible',
+	
+		getInitialState: function getInitialState() {
+			return { elegible: {} };
+		},
+		componentWillMount: function componentWillMount() {
+			this.setState({ elegible: _data2.default.getElegible() });
+		},
 		render: function render() {
 			return _react2.default.createElement(
-				'div',
+				'center',
 				null,
 				_react2.default.createElement(
-					'h1',
+					'div',
 					null,
-					'Who is Elegible?'
-				),
-				_react2.default.createElement(
-					'h2',
-					null,
-					'As a mentor:'
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc... '
-				),
-				_react2.default.createElement(
-					'h2',
-					null,
-					'As a mentee:'
-				),
-				_react2.default.createElement(
-					'p',
-					null,
-					'You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc... '
+					_react2.default.createElement(
+						'h1',
+						null,
+						'Who is Elegible?'
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						this.state.elegible.mentor
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						this.state.elegible.mentee
+					)
 				)
 			);
 		}
@@ -26717,19 +26722,24 @@
 /* 237 */
 /***/ function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 	var data = {
 		about: { text: "Once a a profile has been filled with all the neccesary information, our system will show you the matches for mentor/mentee based on the skillset the mentor posses and the skills the mentee wants to build on. 													The match will also be based on location/proximity and availability preferences specified when filling the profile.													After the match is made, you will be able to contact each other to set a time to meet and have the mentoring session" },
-		elegible: {}
-	
+		elegible: {
+			mentor: 'As a mentor: 									As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc...',
+			mentee: 'As a mentee:  									You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc...' }
 	};
 	
 	data.getAbout = function () {
 		return this.about;
+	};
+	
+	data.getElegible = function () {
+		return this.elegible;
 	};
 	
 	exports.default = data;

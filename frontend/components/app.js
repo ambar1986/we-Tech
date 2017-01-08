@@ -6,8 +6,8 @@ import Elegible from './elegible';
 import Mentor from './mentor';
 import About from './about.jsx';
 import Login from './login.jsx';
-import Mentee from './login.jsx';
 import '../app.css';
+import Mentee from './mentee.jsx';
 
 var App = React.createClass({
 	render(){

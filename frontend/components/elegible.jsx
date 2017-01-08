@@ -1,19 +1,22 @@
-import React from 'react'
+import React from 'react';
+import data from './data';
 
 var Elegible = React.createClass({
+	getInitialState:function(){
+		return {elegible:{}}
+	},
+	componentWillMount(){
+		this.setState({elegible: data.getElegible()})
+	},
 	render(){
 		return(
+			<center>
 			<div>
 			<h1>Who is Elegible?</h1>
-			
-			<h2>As a mentor:</h2>
-			
-			<p>As a mentor you will be asked to fill in a profile that will ask for specific technologies ...etc... </p>
-			
-			<h2>As a mentee:</h2>
-
-			<p>You should be a female 18 yo and older who is interested in learning to code, ideally females who are currently programming students...etc... </p>
+				<p>{this.state.elegible.mentor}</p>
+				<p>{this.state.elegible.mentee}</p>
 			</div>
+			</center>
 			)
 	}
 })
