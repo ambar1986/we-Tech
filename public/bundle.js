@@ -78,6 +78,10 @@
 	
 	__webpack_require__(239);
 	
+	var _mentee = __webpack_require__(244);
+	
+	var _mentee2 = _interopRequireDefault(_mentee);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var App = _react2.default.createClass({
@@ -149,7 +153,7 @@
 			_react2.default.createElement(_reactRouter.Route, { path: 'Mentor', component: _mentor2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'About', component: _about2.default }),
 			_react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _login2.default })
+			_react2.default.createElement(_reactRouter.Route, { path: 'Mentee', component: _mentee2.default })
 		)
 	), document.getElementById('root'));
 
@@ -27129,6 +27133,58 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentee = _react2.default.createClass({
+		displayName: 'Mentee',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ id: 'login' },
+				'Register to get a mentor',
+				_react2.default.createElement(
+					'form',
+					null,
+					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
+					_react2.default.createElement('imput', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('imput', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
+					),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
+					_react2.default.createElement('input', { type: 'url', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
+					_react2.default.createElement(
+						'input',
+						{ type: 'button' },
+						'Create an account!'
+					)
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentee;
 
 /***/ }
 /******/ ]);
