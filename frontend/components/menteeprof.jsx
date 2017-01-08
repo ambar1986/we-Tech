@@ -13,12 +13,13 @@ var MenteeProf = React.createClass({
        <h2 className="mentee">Samantha Thomas</h2>
                   
           <div className="panel-body">
-            <div className="row">
                        
-              <div className="col-md-3 col-lg-3 " > <img alt="User Pic" src="http://www.creativedigest.co.uk/wp-content/uploads/2014/03/greta-soloman-1200x900.jpg" className="img-circle img-responsive" /> </div>
+              <div className="col-md-4 col-lg-4 " > 
+              <img alt="User Pic" src="https://medicine.temple.edu/sites/medicine/files/files/profile_lester_m.jpg" className="img-circle img-responsive" /> 
+              </div>
                      
                     
-                        <div className=" col-md-6 col-lg-6 "> 
+                        <div className=" col-md-7 col-lg-7 "> 
                           <table className="table table-user-information">
                           <tbody>
                               <tr>
@@ -56,7 +57,7 @@ var MenteeProf = React.createClass({
                       
                         </div>
                       </div>
-                    </div>
+                  
 
       </div></center>
     )

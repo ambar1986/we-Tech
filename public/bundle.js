@@ -26906,7 +26906,7 @@
 	
 	
 	// module
-	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\na:hover {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor:black;\n}\n\n.navbar {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n\tbackground-color: none;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n}\n\n.women {\n\twidth: 900px;\n\tpadding-bottom: 15px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 20%;\n\tmargin-right: 20%;\n}\n\n\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\ninput[type=password] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 20px;\n\tmargin: 3px;\n\tcursor: pointer;\n}", ""]);
+	exports.push([module.id, "a:link {\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\ttext-decoration: none;\n\tcolor: black;\n}\n\na:hover {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor:black;\n}\n\n.navbar {\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tmargin-left:35%;\n\tjustify-content: center;\n\tbackground-color: none;\n}\n\n.logo {\n\tjustify-content: center;\n}\n\n.mission {\n\twidth: 1000px;\n}\n\n.women {\n\twidth: 900px;\n\tpadding-bottom: 15px;\n}\n\n.break {\n\twidth: 700px;\n}\n\n.about {\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n    margin-left: 20%;\n\tmargin-right: 20%;\n}\n\n.img-circle {\n\twidth: 350px;\n}\n\n\n/*.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}*/\n.desc {\n\twidth: 80%;\n    height: 150px;\n    padding: 12px 20px;\n    box-sizing: border-box;\n    border: 2px solid #ccc;\n    border-radius: 4px;\n    background-color: #FFF0F5;\n    resize: none;\n}\n\ninput[type=text] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\ninput[type=password] {\n    width: 80%;\n    padding: 12px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    border: none;\n    background-color: #FFF0F5;\n    color: black;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 3px;\n\tcursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -27580,119 +27580,113 @@
 	          { className: 'panel-body' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'row' },
+	            { className: 'col-md-4 col-lg-4 ' },
+	            _react2.default.createElement('img', { alt: 'User Pic', src: 'https://medicine.temple.edu/sites/medicine/files/files/profile_lester_m.jpg', className: 'img-circle img-responsive' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: ' col-md-7 col-lg-7 ' },
 	            _react2.default.createElement(
-	              'div',
-	              { className: 'col-md-3 col-lg-3 ' },
-	              ' ',
-	              _react2.default.createElement('img', { alt: 'User Pic', src: 'http://www.creativedigest.co.uk/wp-content/uploads/2014/03/greta-soloman-1200x900.jpg', className: 'img-circle img-responsive' }),
-	              ' '
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: ' col-md-6 col-lg-6 ' },
+	              'table',
+	              { className: 'table table-user-information' },
 	              _react2.default.createElement(
-	                'table',
-	                { className: 'table table-user-information' },
+	                'tbody',
+	                null,
 	                _react2.default.createElement(
-	                  'tbody',
+	                  'tr',
 	                  null,
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Role:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Mentee'
-	                    )
+	                    'Role:'
 	                  ),
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Description:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Hi, I am a self-taught coder. I\'ve been learning through Codecademy and FreeCodeCamp. I am hoping to improve on my JavaScript and learn React/Redux.'
-	                    )
+	                    'Mentee'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Description:'
 	                  ),
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Skills:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'JavaScript, HTML, CSS'
-	                    )
+	                    'Hi, I am a self-taught coder. I\'ve been learning through Codecademy and FreeCodeCamp. I am hoping to improve on my JavaScript and learn React/Redux.'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Skills:'
 	                  ),
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Education:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'BS in Fine Arts from NYU'
-	                    )
+	                    'JavaScript, HTML, CSS'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Education:'
 	                  ),
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Availability:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      '2 Hrs/Week/In Person'
-	                    )
+	                    'BS in Fine Arts from NYU'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Availability:'
 	                  ),
 	                  _react2.default.createElement(
-	                    'tr',
+	                    'td',
 	                    null,
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'Contact:'
-	                    ),
-	                    _react2.default.createElement(
-	                      'td',
-	                      null,
-	                      'sam@gmail.com'
-	                    )
+	                    '2 Hrs/Week/In Person'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Contact:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'sam@gmail.com'
 	                  )
 	                )
-	              ),
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: 'MentorProf', className: 'button' },
-	                'See your mentor!'
-	              ),
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/', className: 'button' },
-	                'Logout'
 	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'MentorProf', className: 'button' },
+	              'See your mentor!'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/', className: 'button' },
+	              'Logout'
 	            )
 	          )
 	        )
@@ -27732,67 +27726,136 @@
 	var MentorProf = _react2.default.createClass({
 	  displayName: 'MentorProf',
 	
-	  getInitialState: function getInitialState() {
-	    return { users: {} };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    this.setState({ users: _data2.default.getUser() });
-	  },
-	
 	  render: function render() {
-	    console.log("mentorprof");
 	    return _react2.default.createElement(
-	      'div',
+	      'center',
 	      null,
 	      _react2.default.createElement(
-	        'center',
+	        'div',
 	        null,
+	        _react2.default.createElement('hr', { className: 'break' }),
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Mentor Profile:'
+	          'h2',
+	          { className: 'mentee' },
+	          'Claire Monroe'
 	        ),
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Name:'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.users.mentor[0].name
-	        ),
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Description:'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.users.mentor[0].description
-	        ),
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Skills:'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.users.mentor[0].skills
-	        ),
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'This is your match:'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: 'MenteeProf' },
-	          'I\'m your Mentee'
-	        ),
-	        this.props.children
+	          'div',
+	          { className: 'panel-body' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'col-md-4 col-lg-4 ' },
+	            ' ',
+	            _react2.default.createElement('img', { alt: 'User Pic', src: 'https://abm-website-assets.s3.amazonaws.com/labdesignnews.com/s3fs-public/embedded_image/2016/09/TRIA_Jeannie%20Pierce%20Thacker_Headshot.jpg', className: 'img-circle img-responsive' }),
+	            ' '
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: ' col-md-7 col-lg-7 ' },
+	            _react2.default.createElement(
+	              'table',
+	              { className: 'table table-user-information' },
+	              _react2.default.createElement(
+	                'tbody',
+	                null,
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Role:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Mentor'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Description:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Hi, I am a frontend developer at Facebook. '
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Skills:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'React, Redux, React-Native, Angular, JavaScript, HTML, CSS'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Education:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Computer Science from MIT'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Availability:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    '2 Hrs/Week/In Person'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'Contact:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'claire@facebook.com'
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'MenteeProf', className: 'button' },
+	              'See your mentee!'
+	            ),
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/', className: 'button' },
+	              'Logout'
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }

@@ -48,6 +48,9 @@ a:active {
 	margin-right: 20%;
 }
 
+.img-circle {
+	width: 350px;
+}
 
 
 /*.input {
@@ -93,7 +96,7 @@ input[type=password] {
 	background-color: #e8595e;
 	border: none;
 	color: white;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	margin: 3px;
 	cursor: pointer;
 }
