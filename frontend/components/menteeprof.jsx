@@ -21,6 +21,7 @@ var MenteeProf = React.createClass({
             <h1>Skills:</h1>
             <p>{this.state.users.mentee[0].skills}</p>
             <Link to={MentorProf}></Link>
+            {this.props.children}
       </center>
       </div>
     )
