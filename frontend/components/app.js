@@ -21,7 +21,7 @@ var App = React.createClass({
 		return(
 			<div>
 				
-				<center><img className="logo" src={require('../images/weTech-logo.png')} /></center>
+				<center><Link to='/'><img className="logo" src={require('../images/weTech-logo.png')} /></Link></center>
 		            <div className="navbar">
 		              <Link to='/'>Home</Link> 
 		              <Link to='About'>About</Link>
