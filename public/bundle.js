@@ -64,23 +64,23 @@
 	
 	var _mentor2 = _interopRequireDefault(_mentor);
 	
-	var _mentee = __webpack_require__(244);
+	var _mentee = __webpack_require__(236);
 	
 	var _mentee2 = _interopRequireDefault(_mentee);
 	
-	var _about = __webpack_require__(236);
+	var _about = __webpack_require__(237);
 	
 	var _about2 = _interopRequireDefault(_about);
 	
-	var _login = __webpack_require__(237);
+	var _login = __webpack_require__(238);
 	
 	var _login2 = _interopRequireDefault(_login);
 	
-	var _contactUs = __webpack_require__(243);
+	var _contactUs = __webpack_require__(239);
 	
 	var _contactUs2 = _interopRequireDefault(_contactUs);
 	
-	__webpack_require__(238);
+	__webpack_require__(240);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -93,7 +93,7 @@
 				_react2.default.createElement(
 					'center',
 					null,
-					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(242) })
+					_react2.default.createElement('img', { className: 'logo', src: __webpack_require__(244) })
 				),
 				_react2.default.createElement(
 					'nav',
@@ -26673,6 +26673,67 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Mentee = _react2.default.createClass({
+		displayName: 'Mentee',
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				{ id: 'login' },
+				_react2.default.createElement(
+					'h1',
+					null,
+					'Register to get a mentor'
+				),
+				_react2.default.createElement(
+					'form',
+					null,
+					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
+					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'p',
+						null,
+						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
+					),
+					_react2.default.createElement('input', { type: 'text' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
+				)
+			);
+		}
+	});
+	
+	exports.default = Mentee;
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 	
@@ -26736,7 +26797,7 @@
 	exports.default = About;
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -26768,16 +26829,80 @@
 	exports.default = Login;
 
 /***/ },
-/* 238 */
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _data = __webpack_require__(234);
+	
+	var _data2 = _interopRequireDefault(_data);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ContactUs = _react2.default.createClass({
+	  displayName: 'ContactUs',
+	
+	  getInitialState: function getInitialState() {
+	    return { contact: {} };
+	  },
+	  componentWillMount: function componentWillMount() {
+	    this.setState({ contact: _data2.default.getContact() });
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'center',
+	        null,
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Contact Us:'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.address
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.phone
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          this.state.contact.email
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = ContactUs;
+
+/***/ },
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(239);
+	var content = __webpack_require__(241);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(241)(content, {});
+	var update = __webpack_require__(243)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -26794,10 +26919,10 @@
 	}
 
 /***/ },
-/* 239 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(240)();
+	exports = module.exports = __webpack_require__(242)();
 	// imports
 	
 	
@@ -26808,7 +26933,7 @@
 
 
 /***/ },
-/* 240 */
+/* 242 */
 /***/ function(module, exports) {
 
 	/*
@@ -26864,7 +26989,7 @@
 
 
 /***/ },
-/* 241 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -27116,135 +27241,10 @@
 
 
 /***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
-
-/***/ },
-/* 243 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _data = __webpack_require__(234);
-	
-	var _data2 = _interopRequireDefault(_data);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var ContactUs = _react2.default.createClass({
-	  displayName: 'ContactUs',
-	
-	  getInitialState: function getInitialState() {
-	    return { contact: {} };
-	  },
-	  componentWillMount: function componentWillMount() {
-	    this.setState({ contact: _data2.default.getContact() });
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'center',
-	        null,
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Contact Us:'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.address
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.phone
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          this.state.contact.email
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = ContactUs;
-
-/***/ },
 /* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Mentee = _react2.default.createClass({
-		displayName: 'Mentee',
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				{ id: 'login' },
-				_react2.default.createElement(
-					'h1',
-					null,
-					'Register to get a mentor'
-				),
-				_react2.default.createElement(
-					'form',
-					null,
-					_react2.default.createElement('input', { type: 'text', placeholder: 'First Name' }),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Last Name' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'email', placeholder: 'Email' }),
-					_react2.default.createElement('input', { type: 'Password', placeholder: 'Password' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('imput', { type: 'text', placeholder: 'Education' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement(
-						'p',
-						null,
-						'Description - Why do you want to be a mentee? Who are you? What do you hope to do in the future?'
-					),
-					_react2.default.createElement('input', { type: 'text' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Current Skills' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Skills to Improve On/Gain' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Do you have a Github?' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'text', placeholder: 'Anything else we need to know about you' }),
-					_react2.default.createElement('br', null),
-					_react2.default.createElement('input', { type: 'submit', placeholder: 'Create an account!' })
-				)
-			);
-		}
-	});
-	
-	exports.default = Mentee;
+	module.exports = __webpack_require__.p + "c1f695f26f60616e9fa41af9018095b2.png";
 
 /***/ }
 /******/ ]);
