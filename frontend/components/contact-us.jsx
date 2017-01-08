@@ -12,7 +12,13 @@ var ContactUs = React.createClass({
     return (
       <div>
       <center>
-
+          <form>
+            Name:
+            <input type='text' />
+            Email:
+            <input type='email' />
+            <input type='text' />
+          </form>
         <h6>Contact Us:</h6>
         	<p>{this.state.contact.address}</p>
           <p>{this.state.contact.phone}</p>
